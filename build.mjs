@@ -22,7 +22,7 @@ async function collectPages() {
     const full = path.join(SRC, 'content', dir);
     let files = [];
     try { files = await fs.readdir(full); } catch { continue; }
-    for (const f of files.filter(f => f.endsWith('.mjs')).sort()) {
+    for (const f of files.filter(f => f.endsWith('.mjs') && !f.startsWith('_')).sort()) {
       const mod = await import(pathToFileURL(path.join(full, f)).href);
       const value = mod.default;
       if (!value) throw new Error(`${dir}/${f} : export par defaut manquant`);
