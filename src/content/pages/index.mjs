@@ -8,7 +8,7 @@ const hero = `
 <section class="hero">
   <div class="hero__inner">
     <div>
-      <p class="hero__eyebrow">Spécialiste — une seule espèce de nuisible</p>
+      <p class="hero__eyebrow">Spécialistes — processionnaires uniquement</p>
       <h1>Chenilles processionnaires : traitement et prévention</h1>
       <p class="hero__lead">Nous ne traitons que la chenille processionnaire du pin et la chenille
       processionnaire du chêne, en Île-de-France. Identification du nid, échenillage, piégeage,

@@ -11,21 +11,22 @@
   <!-- Pin sylvestre, nid en extremite de branche -->
   <g stroke="#7FB995" stroke-width="3" fill="none" stroke-linecap="round">
     <path d="M250 560V250"/>
-    <path d="M250 300 165 250M250 300l85-50M250 370 150 320M250 370l100-50M250 440 170 400M250 440l80-40"/>
+    <path d="M250 320 190 292M250 320l60-28M250 400 178 368M250 400l72-32"/>
   </g>
   <g fill="#2E6A4E">
-    <ellipse cx="250" cy="232" rx="78" ry="46"/><ellipse cx="180" cy="300" rx="62" ry="34"/>
-    <ellipse cx="322" cy="292" rx="60" ry="32"/><ellipse cx="160" cy="372" rx="58" ry="30"/>
-    <ellipse cx="342" cy="362" rx="56" ry="30"/>
+    <path d="M250 168 196 250h108Z"/>
+    <path d="M250 232 174 330h152Z"/>
+    <path d="M250 306 156 420h188Z"/>
+    <path d="M250 378 142 500h216Z"/>
   </g>
   <!-- nid soyeux blanc, caracteristique du pin -->
   <g>
-    <ellipse cx="336" cy="268" rx="30" ry="24" fill="#F2F6F1"/>
-    <ellipse cx="336" cy="268" rx="30" ry="24" fill="none" stroke="#C9D8CB" stroke-width="1.5"/>
-    <path d="M318 254q18 8 36 0M316 268q20 9 40 0M320 282q16 7 32 0" stroke="#D5E2D6" stroke-width="1.2" fill="none"/>
+    <ellipse cx="330" cy="300" rx="30" ry="24" fill="#F2F6F1"/>
+    <ellipse cx="330" cy="300" rx="30" ry="24" fill="none" stroke="#C9D8CB" stroke-width="1.5"/>
+    <path d="M312 286q18 8 36 0M310 300q20 9 40 0M314 314q16 7 32 0" stroke="#D5E2D6" stroke-width="1.2" fill="none"/>
   </g>
-  <text x="392" y="252" fill="#EDF3EC" font-family="Georgia,serif" font-size="19">Pin</text>
-  <text x="392" y="274" fill="#9FCBAF" font-family="system-ui,sans-serif" font-size="14">nid soyeux en bout de branche</text>
+  <text x="384" y="284" fill="#EDF3EC" font-family="Georgia,serif" font-size="19">Pin</text>
+  <text x="384" y="306" fill="#9FCBAF" font-family="system-ui,sans-serif" font-size="14">nid soyeux en bout de branche</text>
 
   <!-- Chene, nid plaque contre le tronc -->
   <g>

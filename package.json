@@ -10,5 +10,10 @@
     "audit": "node scripts/audit.mjs",
     "check": "node build.mjs && node scripts/audit.mjs"
   },
-  "engines": { "node": ">=20" }
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.63.0"
+  }
 }

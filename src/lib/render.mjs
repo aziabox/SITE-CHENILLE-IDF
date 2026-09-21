@@ -22,6 +22,17 @@ export const stripTags = (html = '') => String(html)
 
 export const abs = (url) => site.origin + url;
 
+/**
+ * Typographie francaise : espace insecable avant les ponctuations doubles
+ * et a l'interieur des guillemets. Applique au HTML de contenu uniquement,
+ * jamais au JSON-LD ni aux scripts.
+ */
+export const typoFr = (html = '') => String(html)
+  .replace(/ ([:;!?%])/g, '\u00A0$1')
+  .replace(/« /g, '\u00A0«\u00A0'.slice(1))
+  .replace(/ »/g, '\u00A0»')
+  .replace(/(\d) (€|km|m|cm|h)/g, '$1\u00A0$2');
+
 /** Identifiant d'ancre stable a partir d'un intitule de section. */
 export const anchorId = (text) => stripTags(text)
   .toLowerCase()
@@ -377,6 +388,14 @@ const headerHtml = (current) => `
       <span class="header__tel-num">${site.phoneDisplay}</span>
     </a>
 
+    <a class="header__call" href="${site.phoneHref}" data-cta="tel" data-cta-zone="header-mobile"
+       aria-label="Appeler le ${site.phoneDisplay}">
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+        <path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .58 3.6 1 1 0 0 1-.25 1l-2.23 2.2Z" fill="currentColor"/>
+      </svg>
+      <span>Appeler</span>
+    </a>
+
     <button class="burger" type="button" aria-expanded="false" aria-controls="menu-mobile" aria-label="Ouvrir le menu">
       <span></span><span></span><span></span>
     </button>
@@ -529,7 +548,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>${esc(page.title)}</title>
+<title>${esc(typoFr(page.title))}</title>
 <meta name="description" content="${esc(page.description)}">
 <link rel="canonical" href="${canonical}">
 <meta name="robots" content="${robots}">
@@ -563,7 +582,7 @@ ${page.article ? `<meta property="article:published_time" content="${page.datePu
 ${headerHtml(page.url)}
 <main id="contenu">
 ${breadcrumbHtml(page.trail)}
-${page.body}
+${typoFr(page.body)}
 </main>
 ${footerHtml()}
 <script>${inlineJs}</script>
