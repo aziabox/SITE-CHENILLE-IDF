@@ -7,7 +7,7 @@ const villes = villesOf('92-hauts-de-seine');
 export default standardPage({
   url: '/departements/92-hauts-de-seine/',
   title: 'Chenilles processionnaires dans les Hauts-de-Seine (92)',
-  description: "Hauts-de-Seine : parcs historiques, coteaux boisés de Meudon et Saint-Cloud, cèdres de villas et copropriétés des années 1960. Une forte densité de conifères d'ornement en milieu urbain.",
+  description: "Hauts-de-Seine : parcs historiques, coteaux boisés et copropriétés plantées. Une densité inhabituelle de cèdres et de pins d'ornement.",
   h1: 'Chenilles processionnaires dans les Hauts-de-Seine (92)',
   trail: [{ name: 'Accueil', url: '/' }, { name: "Zones d'intervention", url: '/departements/' },
           { name: 'Hauts-de-Seine (92)', url: '/departements/92-hauts-de-seine/' }],

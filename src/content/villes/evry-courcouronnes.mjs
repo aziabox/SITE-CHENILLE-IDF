@@ -7,7 +7,7 @@ export default standardPage({
   deptSlug: '91-essonne',
   villeTeaser: "ville nouvelle aux plantations arrivées à maturité, avec un patrimoine arboré homogène",
   title: 'Chenilles processionnaires à Évry-Courcouronnes (91000)',
-  description: "Évry-Courcouronnes : une ville nouvelle dont les plantations des années 1970 arrivent à maturité. Patrimoine arboré homogène, gestion par inventaire et bois de Saint-Eutrope.",
+  description: "Évry-Courcouronnes : les plantations de la ville nouvelle arrivent à maturité. Patrimoine arboré homogène et gestion par inventaire.",
   h1: 'Chenilles processionnaires à Évry-Courcouronnes',
   trail: [{ name: 'Accueil', url: '/' }, { name: "Zones d'intervention", url: '/departements/' },
           { name: 'Essonne (91)', url: '/departements/91-essonne/' },

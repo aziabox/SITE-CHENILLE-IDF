@@ -4,7 +4,7 @@ import { safety, note, steps } from '../../lib/render.mjs';
 export default standardPage({
   url: '/chenilles-processionnaires-chien/',
   title: 'Chenilles processionnaires et chien : que faire en cas de contact',
-  description: "Pourquoi les chenilles processionnaires sont dangereuses pour les chiens, les signes à repérer, les gestes immédiats et comment protéger un jardin où vit un chien.",
+  description: "Pourquoi les processionnaires sont dangereuses pour les chiens, les signes à repérer, les gestes immédiats et comment protéger son jardin.",
   h1: 'Chenilles processionnaires et chiens',
   trail: [{ name: 'Accueil', url: '/' }, { name: 'Prévention', url: '/traitement-preventif/' },
           { name: 'Chiens', url: '/chenilles-processionnaires-chien/' }],

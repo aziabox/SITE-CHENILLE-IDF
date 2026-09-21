@@ -7,7 +7,7 @@ export default standardPage({
   deptSlug: '78-yvelines',
   villeTeaser: "patrimoine arboré exceptionnel, alignements historiques et quartiers résidentiels boisés",
   title: 'Chenilles processionnaires à Versailles (78000)',
-  description: "Versailles : un patrimoine arboré d'exception, des alignements historiques, des bois périphériques et des quartiers résidentiels plantés. Intervention sans atteinte aux arbres remarquables.",
+  description: "Versailles : patrimoine arboré d'exception, bois périphériques et quartiers plantés. Intervention sans aucune atteinte aux arbres remarquables.",
   h1: 'Chenilles processionnaires à Versailles',
   trail: [{ name: 'Accueil', url: '/' }, { name: "Zones d'intervention", url: '/departements/' },
           { name: 'Yvelines (78)', url: '/departements/78-yvelines/' },

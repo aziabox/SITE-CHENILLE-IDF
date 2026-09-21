@@ -8,7 +8,7 @@ const champ = (label, valeur) => hasValue(valeur)
 
 export default standardPage({
   url: '/mentions-legales/',
-  title: 'Mentions légales',
+  title: 'Mentions légales — Chenilles processionnaires Île-de-France',
   description: "Mentions légales du site : éditeur, hébergeur, propriété intellectuelle, responsabilité et contact.",
   h1: 'Mentions légales',
   trail: [{ name: 'Accueil', url: '/' }, { name: 'Mentions légales', url: '/mentions-legales/' }],

@@ -7,7 +7,7 @@ export default standardPage({
   deptSlug: '94-val-de-marne',
   villeTeaser: "boucle de la Marne, tissu pavillonnaire ancien et jardins très plantés",
   title: 'Chenilles processionnaires à Saint-Maur-des-Fossés (94100)',
-  description: "Saint-Maur-des-Fossés : une boucle de la Marne densément pavillonnaire, avec des jardins anciens très plantés. Contraintes d'accès et intervention entre voisins.",
+  description: "Saint-Maur-des-Fossés : une boucle de la Marne très pavillonnaire, aux jardins anciens plantés. Contraintes d'accès et intervention entre voisins.",
   h1: 'Chenilles processionnaires à Saint-Maur-des-Fossés',
   trail: [{ name: 'Accueil', url: '/' }, { name: "Zones d'intervention", url: '/departements/' },
           { name: 'Val-de-Marne (94)', url: '/departements/94-val-de-marne/' },

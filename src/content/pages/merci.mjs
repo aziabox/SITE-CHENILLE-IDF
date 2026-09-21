@@ -24,7 +24,7 @@ const body = `
 
 export default {
   url: '/merci/',
-  title: 'Demande envoyée',
+  title: 'Demande envoyée — chenilles processionnaires Île-de-France',
   description: "Votre demande concernant les chenilles processionnaires a bien été envoyée.",
   h1: 'Votre demande a bien été envoyée',
   trail: [{ name: 'Accueil', url: '/' }, { name: 'Demande envoyée', url: '/merci/' }],

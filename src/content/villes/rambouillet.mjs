@@ -7,7 +7,7 @@ export default standardPage({
   deptSlug: '78-yvelines',
   villeTeaser: "habitat dispersé dans un très vaste massif, sans véritable lisière",
   title: 'Chenilles processionnaires à Rambouillet (78120)',
-  description: "Rambouillet : un habitat dispersé au cœur d'un très vaste massif de chênes, où la notion de lisière disparaît. Stratégie de protection pour une propriété en forêt.",
+  description: "Rambouillet : un habitat dispersé dans un très vaste massif de chênes, où la lisière disparaît. Stratégie pour une propriété en forêt.",
   h1: 'Chenilles processionnaires à Rambouillet',
   trail: [{ name: 'Accueil', url: '/' }, { name: "Zones d'intervention", url: '/departements/' },
           { name: 'Yvelines (78)', url: '/departements/78-yvelines/' },

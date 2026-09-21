@@ -4,7 +4,7 @@ import { table, note, safety, figure } from '../../lib/render.mjs';
 export default standardPage({
   url: '/identifier-chenilles-processionnaires/',
   title: 'Identifier une chenille processionnaire : critères sûrs',
-  description: "Reconnaître une chenille processionnaire du pin ou du chêne : taille, couleur, poils, comportement en file, confusions fréquentes avec d'autres chenilles inoffensives.",
+  description: "Reconnaître une chenille processionnaire : taille, couleur, poils, comportement en file, et les confusions fréquentes avec des espèces inoffensives.",
   h1: 'Identifier une chenille processionnaire',
   trail: [{ name: 'Accueil', url: '/' }, { name: 'Chenilles processionnaires', url: '/chenilles-processionnaires/' },
           { name: 'Identifier une chenille', url: '/identifier-chenilles-processionnaires/' }],

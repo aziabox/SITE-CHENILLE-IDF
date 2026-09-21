@@ -4,7 +4,7 @@ import { note, table } from '../../lib/render.mjs';
 export default standardPage({
   url: '/departements/75-paris/',
   title: 'Chenilles processionnaires à Paris (75) : intervention',
-  description: "Chenilles processionnaires à Paris : bois de Vincennes et de Boulogne, parcs, cimetières et cours d'immeubles. Contraintes d'intervention en ville dense et interlocuteurs concernés.",
+  description: "Chenilles processionnaires à Paris : bois de Vincennes et de Boulogne, parcs, cimetières et cours d'immeubles. Intervenir en ville dense.",
   h1: 'Chenilles processionnaires à Paris (75)',
   trail: [{ name: 'Accueil', url: '/' }, { name: "Zones d'intervention", url: '/departements/' },
           { name: 'Paris (75)', url: '/departements/75-paris/' }],

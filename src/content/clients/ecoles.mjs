@@ -4,7 +4,7 @@ import { safety, note, steps, table } from '../../lib/render.mjs';
 export default standardPage({
   url: '/ecoles/',
   title: 'Chenilles processionnaires autour des écoles et des crèches',
-  description: "Chêne de cour, arbres d'abords, aire de jeux : comment repérer, baliser et faire traiter les chenilles processionnaires dans un établissement accueillant des enfants.",
+  description: "Chêne de cour, abords, aire de jeux : repérer, baliser et faire traiter les processionnaires dans un établissement accueillant des enfants.",
   h1: 'Écoles, crèches et centres de loisirs',
   trail: [{ name: 'Accueil', url: '/' }, { name: 'Écoles et crèches', url: '/ecoles/' }],
   datePublished: '2026-04-10',

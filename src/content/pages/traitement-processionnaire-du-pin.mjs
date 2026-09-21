@@ -4,7 +4,7 @@ import { table, note, steps } from '../../lib/render.mjs';
 export default standardPage({
   url: '/traitement-processionnaire-du-pin/',
   title: 'Traitement de la processionnaire du pin : protocole par saison',
-  description: "Protocole complet de traitement de la processionnaire du pin : traitement biologique d'automne, échenillage d'hiver, collier avant la descente, piégeage estival. Conditions et limites de chaque étape.",
+  description: "Traiter la processionnaire du pin : biocontrôle d'automne, échenillage d'hiver, collier avant la descente, piégeage estival. Le protocole par saison.",
   h1: 'Traiter la processionnaire du pin',
   trail: [{ name: 'Accueil', url: '/' }, { name: 'Traitement', url: '/traitement-chenilles-processionnaires/' },
           { name: 'Traitement du pin', url: '/traitement-processionnaire-du-pin/' }],

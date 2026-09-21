@@ -7,7 +7,7 @@ export default standardPage({
   deptSlug: '77-seine-et-marne',
   villeTeaser: "ville enclavée dans un massif où pins sylvestres et chênes se côtoient",
   title: 'Chenilles processionnaires à Fontainebleau (77300)',
-  description: "Fontainebleau : une ville enclavée dans un massif où pin sylvestre et chêne se côtoient. Les deux espèces de processionnaires y sont présentes, avec deux calendriers distincts.",
+  description: "Fontainebleau : une ville enclavée dans un massif où pin et chêne se côtoient. Les deux espèces y sont présentes, avec deux calendriers distincts.",
   h1: 'Chenilles processionnaires à Fontainebleau',
   trail: [{ name: 'Accueil', url: '/' }, { name: "Zones d'intervention", url: '/departements/' },
           { name: 'Seine-et-Marne (77)', url: '/departements/77-seine-et-marne/' },

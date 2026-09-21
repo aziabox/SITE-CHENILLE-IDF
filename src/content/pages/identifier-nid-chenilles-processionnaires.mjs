@@ -4,7 +4,7 @@ import { table, note, safety, figure } from '../../lib/render.mjs';
 export default standardPage({
   url: '/identifier-nid-chenilles-processionnaires/',
   title: 'Identifier un nid de chenilles processionnaires',
-  description: "Reconnaître un nid de processionnaire du pin ou du chêne, le distinguer d'une toile d'hyponomeute, d'un gui ou d'un nid d'oiseau, et savoir si un nid vide reste dangereux.",
+  description: "Reconnaître un nid de processionnaires et le distinguer d'une toile, d'un gui ou d'un nid d'oiseau. Et pourquoi un nid vide reste dangereux.",
   h1: 'Identifier un nid de chenilles processionnaires',
   trail: [{ name: 'Accueil', url: '/' }, { name: 'Chenilles processionnaires', url: '/chenilles-processionnaires/' },
           { name: 'Identifier un nid', url: '/identifier-nid-chenilles-processionnaires/' }],

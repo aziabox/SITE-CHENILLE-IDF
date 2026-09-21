@@ -7,7 +7,7 @@ export default standardPage({
   deptSlug: '95-val-d-oise',
   villeTeaser: "patrimoine arboré planifié des années 1970-1990, aujourd'hui arrivé à maturité",
   title: 'Chenilles processionnaires à Cergy (95000)',
-  description: "Cergy : un patrimoine arboré planifié, planté dans les années 1970-1990 et aujourd'hui mature. Coulées vertes, espaces publics, résidences et bord d'Oise.",
+  description: "Cergy : un patrimoine arboré planifié dans les années 1970-1990, aujourd'hui mature. Coulées vertes, résidences, établissements et bord d'Oise.",
   h1: 'Chenilles processionnaires à Cergy',
   trail: [{ name: 'Accueil', url: '/' }, { name: "Zones d'intervention", url: '/departements/' },
           { name: "Val-d'Oise (95)", url: '/departements/95-val-d-oise/' },

@@ -7,7 +7,7 @@ const villes = villesOf('91-essonne');
 export default standardPage({
   url: '/departements/91-essonne/',
   title: "Chenilles processionnaires en Essonne (91)",
-  description: "Essonne : sols sableux du Hurepoix et du Gâtinais, forêt de Sénart, vallée de Chevreuse. Le département francilien où la processionnaire du pin est la mieux installée.",
+  description: "Essonne : sols sableux du Hurepoix, forêt de Sénart, vallées boisées. Le département où la processionnaire du pin est la mieux installée.",
   h1: "Chenilles processionnaires en Essonne (91)",
   trail: [{ name: 'Accueil', url: '/' }, { name: "Zones d'intervention", url: '/departements/' },
           { name: 'Essonne (91)', url: '/departements/91-essonne/' }],

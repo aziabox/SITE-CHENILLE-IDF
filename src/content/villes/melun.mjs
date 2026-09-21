@@ -7,7 +7,7 @@ export default standardPage({
   deptSlug: '77-seine-et-marne',
   villeTeaser: "ville de vallée entre deux massifs, avec un tissu de faubourgs pavillonnaires",
   title: 'Chenilles processionnaires à Melun (77000)',
-  description: "Melun : une ville de vallée prise entre la forêt de Sénart au nord-ouest et le massif de Fontainebleau au sud, avec des faubourgs pavillonnaires largement plantés.",
+  description: "Melun : une ville de vallée entre forêt de Sénart et massif de Fontainebleau, avec des faubourgs pavillonnaires largement plantés.",
   h1: 'Chenilles processionnaires à Melun',
   trail: [{ name: 'Accueil', url: '/' }, { name: "Zones d'intervention", url: '/departements/' },
           { name: 'Seine-et-Marne (77)', url: '/departements/77-seine-et-marne/' },

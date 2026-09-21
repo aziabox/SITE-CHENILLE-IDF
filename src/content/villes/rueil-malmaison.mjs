@@ -7,7 +7,7 @@ export default standardPage({
   deptSlug: '92-hauts-de-seine',
   villeTeaser: "grands parcs, propriétés arborées et résidences plantées dans les années 1960",
   title: 'Chenilles processionnaires à Rueil-Malmaison (92500)',
-  description: "Rueil-Malmaison : parcs historiques, grandes propriétés arborées et résidences plantées. Une commune où les conifères d'ornement matures concentrent la processionnaire du pin.",
+  description: "Rueil-Malmaison : parcs historiques, propriétés arborées et résidences plantées, où les conifères matures concentrent la processionnaire du pin.",
   h1: 'Chenilles processionnaires à Rueil-Malmaison',
   trail: [{ name: 'Accueil', url: '/' }, { name: "Zones d'intervention", url: '/departements/' },
           { name: 'Hauts-de-Seine (92)', url: '/departements/92-hauts-de-seine/' },

@@ -4,7 +4,7 @@ import { table, note, figure } from '../../lib/render.mjs';
 export default standardPage({
   url: '/traitement-chenilles-processionnaires/',
   title: 'Traitement des chenilles processionnaires : méthodes et calendrier',
-  description: "Quelle méthode contre les chenilles processionnaires, et à quel moment : échenillage, traitement biologique, piégeage, surveillance. Comparatif honnête des solutions professionnelles.",
+  description: "Quelle méthode contre les chenilles processionnaires, et à quel moment : échenillage, biocontrôle, piégeage, surveillance. Comparatif honnête.",
   h1: 'Traitement des chenilles processionnaires',
   trail: [{ name: 'Accueil', url: '/' }, { name: 'Traitement', url: '/traitement-chenilles-processionnaires/' }],
   datePublished: '2026-02-18',

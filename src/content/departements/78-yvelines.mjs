@@ -7,7 +7,7 @@ const villes = villesOf('78-yvelines');
 export default standardPage({
   url: '/departements/78-yvelines/',
   title: 'Chenilles processionnaires dans les Yvelines (78)',
-  description: "Yvelines : forêts de Rambouillet, Saint-Germain-en-Laye et Marly, parcs historiques et communes résidentielles de lisière. Où la processionnaire du chêne se concentre et comment nous intervenons.",
+  description: "Yvelines : Rambouillet, Saint-Germain-en-Laye, Marly. Où la processionnaire du chêne se concentre, et comment nous intervenons en lisière.",
   h1: 'Chenilles processionnaires dans les Yvelines (78)',
   trail: [{ name: 'Accueil', url: '/' }, { name: "Zones d'intervention", url: '/departements/' },
           { name: 'Yvelines (78)', url: '/departements/78-yvelines/' }],

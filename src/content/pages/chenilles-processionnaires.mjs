@@ -4,7 +4,7 @@ import { table, figure, note, safety } from '../../lib/render.mjs';
 export default standardPage({
   url: '/chenilles-processionnaires/',
   title: 'Chenilles processionnaires : espèces, risques et traitements',
-  description: "Les deux espèces de chenilles processionnaires en France : pin et chêne. Cycle, poils urticants, identification du nid, méthodes de traitement et cadre réglementaire.",
+  description: "Les deux espèces de chenilles processionnaires : pin et chêne. Cycle, poils urticants, identification du nid, traitements et cadre réglementaire.",
   h1: 'Les chenilles processionnaires : ce qu\'il faut savoir avant d\'agir',
   trail: [{ name: 'Accueil', url: '/' }, { name: 'Chenilles processionnaires', url: '/chenilles-processionnaires/' }],
   datePublished: '2026-02-10',

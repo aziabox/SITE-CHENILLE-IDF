@@ -4,7 +4,7 @@ import { table, note, safety, steps } from '../../lib/render.mjs';
 export default standardPage({
   url: '/chenille-processionnaire-du-chene/',
   title: 'Chenille processionnaire du chêne : reconnaître et traiter',
-  description: "Processionnaire du chêne (Thaumetopoea processionea) : nid plat sur le tronc, activité de printemps, risques dans les parcs et les écoles, méthodes d'aspiration et de traitement.",
+  description: "Processionnaire du chêne (Thaumetopoea processionea) : nid plat sur le tronc, activité de printemps, risques et méthodes de traitement.",
   h1: 'La chenille processionnaire du chêne',
   trail: [{ name: 'Accueil', url: '/' }, { name: 'Chenilles processionnaires', url: '/chenilles-processionnaires/' },
           { name: 'Processionnaire du chêne', url: '/chenille-processionnaire-du-chene/' }],

@@ -4,7 +4,7 @@ import { safety, note, table } from '../../lib/render.mjs';
 export default standardPage({
   url: '/espaces-verts/',
   title: 'Espaces verts et chenilles processionnaires : protéger les équipes',
-  description: "Paysagistes, agents communaux, élagueurs : quand la tonte, le soufflage et la taille exposent aux poils urticants, et comment organiser les chantiers sur arbres infestés.",
+  description: "Paysagistes, agents et élagueurs : quand la tonte, le soufflage et la taille exposent aux poils urticants, et comment organiser les chantiers.",
   h1: 'Espaces verts : protéger les équipes et les usagers',
   trail: [{ name: 'Accueil', url: '/' }, { name: 'Espaces verts', url: '/espaces-verts/' }],
   datePublished: '2026-04-12',

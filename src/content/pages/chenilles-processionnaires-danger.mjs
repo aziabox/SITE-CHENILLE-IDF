@@ -4,7 +4,7 @@ import { safety, note, table } from '../../lib/render.mjs';
 export default standardPage({
   url: '/chenilles-processionnaires-danger/',
   title: 'Chenilles processionnaires : quels dangers réels ?',
-  description: "Poils urticants, réactions cutanées, oculaires et respiratoires, durée du risque, personnes et animaux exposés : ce que provoquent réellement les chenilles processionnaires.",
+  description: "Poils urticants, réactions cutanées, oculaires et respiratoires, durée du risque, publics exposés : ce que provoquent vraiment ces chenilles.",
   h1: 'Les dangers des chenilles processionnaires',
   trail: [{ name: 'Accueil', url: '/' }, { name: 'Prévention', url: '/traitement-preventif/' },
           { name: 'Dangers', url: '/chenilles-processionnaires-danger/' }],

@@ -7,7 +7,7 @@ const villes = villesOf('93-seine-saint-denis');
 export default standardPage({
   url: '/departements/93-seine-saint-denis/',
   title: 'Chenilles processionnaires en Seine-Saint-Denis (93)',
-  description: "Seine-Saint-Denis : grands parcs départementaux, forêt de Bondy, patrimoine arboré des ensembles collectifs et des bailleurs. Où le sujet se pose et qui en a la charge.",
+  description: "Seine-Saint-Denis : grands parcs départementaux et patrimoine arboré des ensembles collectifs. Où le sujet se pose et qui en a la charge.",
   h1: 'Chenilles processionnaires en Seine-Saint-Denis (93)',
   trail: [{ name: 'Accueil', url: '/' }, { name: "Zones d'intervention", url: '/departements/' },
           { name: 'Seine-Saint-Denis (93)', url: '/departements/93-seine-saint-denis/' }],

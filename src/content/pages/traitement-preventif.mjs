@@ -4,7 +4,7 @@ import { note, table, steps } from '../../lib/render.mjs';
 export default standardPage({
   url: '/traitement-preventif/',
   title: 'Traitement préventif contre les chenilles processionnaires',
-  description: "Empêcher l'installation d'une colonie : traitement biologique sur jeunes larves, nichoirs à mésanges, surveillance annuelle et plan pluriannuel pour un jardin ou un patrimoine arboré.",
+  description: "Empêcher l'installation d'une colonie : biocontrôle sur jeunes larves, nichoirs, surveillance annuelle et plan pluriannuel sur trois saisons.",
   h1: 'Traitement préventif : agir avant que le nid n\'existe',
   trail: [{ name: 'Accueil', url: '/' }, { name: 'Prévention', url: '/traitement-preventif/' }],
   datePublished: '2026-03-10',

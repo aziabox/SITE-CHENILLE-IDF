@@ -4,7 +4,7 @@ import { safety, note, table } from '../../lib/render.mjs';
 export default standardPage({
   url: '/traitement-curatif/',
   title: 'Traitement curatif des chenilles processionnaires',
-  description: "Infestation déjà installée : diagnostic, sécurisation immédiate de la zone, retrait des nids et traitement du sol. Ce qui relève de l'urgence et ce qui peut attendre la bonne fenêtre.",
+  description: "Infestation installée : diagnostic, sécurisation immédiate, retrait des nids et traitement du sol. Ce qui relève vraiment de l'urgence.",
   h1: 'Traitement curatif : une infestation déjà installée',
   trail: [{ name: 'Accueil', url: '/' }, { name: 'Prévention', url: '/traitement-preventif/' },
           { name: 'Traitement curatif', url: '/traitement-curatif/' }],

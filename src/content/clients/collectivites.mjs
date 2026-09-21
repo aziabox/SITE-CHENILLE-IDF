@@ -4,7 +4,7 @@ import { table, note, steps } from '../../lib/render.mjs';
 export default standardPage({
   url: '/collectivites/',
   title: 'Chenilles processionnaires : intervention pour les collectivités',
-  description: "Communes, EPCI, bailleurs : inventaire du patrimoine arboré, campagnes de traitement, gestion des signalements citoyens et traçabilité des interventions.",
+  description: "Communes, EPCI, bailleurs : inventaire du patrimoine arboré, campagnes de traitement, signalements citoyens et traçabilité des interventions.",
   h1: 'Intervention pour les collectivités',
   trail: [{ name: 'Accueil', url: '/' }, { name: 'Collectivités', url: '/collectivites/' }],
   datePublished: '2026-04-08',

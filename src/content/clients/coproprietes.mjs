@@ -4,7 +4,7 @@ import { steps, note, table } from '../../lib/render.mjs';
 export default standardPage({
   url: '/coproprietes/',
   title: 'Chenilles processionnaires en copropriété : organiser le traitement',
-  description: "Syndic et conseil syndical : comment faire traiter les chenilles processionnaires sur les parties communes, informer les résidents, budgéter et passer d'une urgence à un plan pluriannuel.",
+  description: "Syndic et conseil syndical : faire traiter les processionnaires sur les parties communes, informer les résidents et budgéter un plan pluriannuel.",
   h1: 'Chenilles processionnaires en copropriété',
   trail: [{ name: 'Accueil', url: '/' }, { name: 'Copropriétés', url: '/coproprietes/' }],
   datePublished: '2026-04-04',

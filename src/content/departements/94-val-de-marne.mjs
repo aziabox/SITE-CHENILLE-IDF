@@ -7,7 +7,7 @@ const villes = villesOf('94-val-de-marne');
 export default standardPage({
   url: '/departements/94-val-de-marne/',
   title: 'Chenilles processionnaires dans le Val-de-Marne (94)',
-  description: "Val-de-Marne : bois de Vincennes, massifs du plateau briard, tissu pavillonnaire dense et boucles de la Marne. Deux espèces, deux calendriers, et des jardins très proches des bois.",
+  description: "Val-de-Marne : bois de Vincennes, massifs du plateau briard et pavillonnaire dense. Deux espèces, deux calendriers, des jardins au contact des bois.",
   h1: 'Chenilles processionnaires dans le Val-de-Marne (94)',
   trail: [{ name: 'Accueil', url: '/' }, { name: "Zones d'intervention", url: '/departements/' },
           { name: 'Val-de-Marne (94)', url: '/departements/94-val-de-marne/' }],

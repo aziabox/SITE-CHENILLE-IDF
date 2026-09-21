@@ -4,7 +4,7 @@ import { table, note, safety } from '../../lib/render.mjs';
 export default standardPage({
   url: '/traitement-processionnaire-du-chene/',
   title: 'Traitement de la processionnaire du chêne : méthode et campagnes',
-  description: "Traiter la processionnaire du chêne : aspiration des nids sur tronc, traitement biologique d'avril, inventaire des arbres porteurs et organisation d'une campagne sur patrimoine arboré.",
+  description: "Traiter la processionnaire du chêne : aspiration des nids sur tronc, biocontrôle d'avril et organisation d'une campagne sur patrimoine arboré.",
   h1: 'Traiter la processionnaire du chêne',
   trail: [{ name: 'Accueil', url: '/' }, { name: 'Traitement', url: '/traitement-chenilles-processionnaires/' },
           { name: 'Traitement du chêne', url: '/traitement-processionnaire-du-chene/' }],

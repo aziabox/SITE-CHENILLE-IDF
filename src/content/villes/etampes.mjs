@@ -7,7 +7,7 @@ export default standardPage({
   deptSlug: '91-essonne',
   villeTeaser: "vallées et coteaux sableux du sud essonnien, où la processionnaire du pin est bien installée",
   title: 'Chenilles processionnaires à Étampes (91150)',
-  description: "Étampes : vallées de la Juine et de la Chalouette, coteaux sableux et habitat rural. Un secteur où la processionnaire du pin trouve à la fois son arbre et son sol.",
+  description: "Étampes : vallées et coteaux sableux du sud essonnien, où la processionnaire du pin trouve à la fois son arbre hôte et son sol de nymphose.",
   h1: 'Chenilles processionnaires à Étampes',
   trail: [{ name: 'Accueil', url: '/' }, { name: "Zones d'intervention", url: '/departements/' },
           { name: 'Essonne (91)', url: '/departements/91-essonne/' },

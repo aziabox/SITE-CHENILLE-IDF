@@ -271,7 +271,7 @@ ${cta({
 export default {
   url: '/',
   title: 'Chenilles processionnaires : traitement et prévention en Île-de-France',
-  description: "Spécialiste des chenilles processionnaires du pin et du chêne en Île-de-France : identification, échenillage, piégeage, destruction de nid et prévention. Conseil au 07 56 82 27 85.",
+  description: "Spécialiste des chenilles processionnaires du pin et du chêne en Île-de-France : identification, échenillage, piégeage et prévention. 07 56 82 27 85.",
   h1: 'Chenilles processionnaires : traitement et prévention',
   trail: [{ name: 'Accueil', url: '/' }],
   primaryImage: '/assets/img/hero-processionnaires-idf.svg',

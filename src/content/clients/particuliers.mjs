@@ -4,7 +4,7 @@ import { steps, note, table } from '../../lib/render.mjs';
 export default standardPage({
   url: '/particuliers/',
   title: 'Chenilles processionnaires : intervention chez les particuliers',
-  description: "Un nid dans votre jardin : comment se passe une intervention chez un particulier, ce qui détermine le prix, les précautions avant notre venue et les suites à prévoir.",
+  description: "Un nid dans votre jardin : déroulé d'une intervention chez un particulier, ce qui détermine le prix et les précautions à prendre avant notre venue.",
   h1: 'Intervention chez les particuliers',
   trail: [{ name: 'Accueil', url: '/' }, { name: 'Particuliers', url: '/particuliers/' }],
   datePublished: '2026-04-02',

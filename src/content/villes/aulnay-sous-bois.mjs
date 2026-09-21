@@ -7,7 +7,7 @@ export default standardPage({
   deptSlug: '93-seine-saint-denis',
   villeTeaser: "grands parcs, ensembles collectifs plantés et quartiers pavillonnaires anciens",
   title: 'Chenilles processionnaires à Aulnay-sous-Bois (93600)',
-  description: "Aulnay-sous-Bois : grands parcs de proximité, ensembles collectifs plantés dans les années 1960 et quartiers pavillonnaires arborés. Qui signale, qui décide, qui intervient.",
+  description: "Aulnay-sous-Bois : grands parcs, ensembles collectifs plantés et pavillonnaire arboré. Qui signale, qui décide et qui intervient.",
   h1: 'Chenilles processionnaires à Aulnay-sous-Bois',
   trail: [{ name: 'Accueil', url: '/' }, { name: "Zones d'intervention", url: '/departements/' },
           { name: 'Seine-Saint-Denis (93)', url: '/departements/93-seine-saint-denis/' },

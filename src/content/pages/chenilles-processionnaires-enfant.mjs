@@ -4,7 +4,7 @@ import { safety, note, table } from '../../lib/render.mjs';
 export default standardPage({
   url: '/chenilles-processionnaires-enfant/',
   title: 'Chenilles processionnaires et enfants : protéger et réagir',
-  description: "Pourquoi les enfants sont plus exposés aux chenilles processionnaires, comment sécuriser un jardin, une cour ou une aire de jeux, et que faire après un contact.",
+  description: "Pourquoi les enfants sont plus exposés, comment sécuriser un jardin ou une aire de jeux, et que faire après un contact avec une chenille.",
   h1: 'Chenilles processionnaires et enfants',
   trail: [{ name: 'Accueil', url: '/' }, { name: 'Prévention', url: '/traitement-preventif/' },
           { name: 'Enfants', url: '/chenilles-processionnaires-enfant/' }],

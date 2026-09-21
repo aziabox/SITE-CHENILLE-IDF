@@ -8,7 +8,7 @@ const villes = villesOf('77-seine-et-marne');
 export default standardPage({
   url: '/departements/77-seine-et-marne/',
   title: 'Chenilles processionnaires en Seine-et-Marne (77)',
-  description: "Seine-et-Marne : le seul département francilien où processionnaire du pin et du chêne cohabitent largement. Massif de Fontainebleau, chênaies de Brie, lisières pavillonnaires et centres équestres.",
+  description: "Seine-et-Marne : le seul département francilien où les deux espèces cohabitent largement, entre pins de Fontainebleau et chênaies de Brie.",
   h1: 'Chenilles processionnaires en Seine-et-Marne (77)',
   trail: [{ name: 'Accueil', url: '/' }, { name: "Zones d'intervention", url: '/departements/' },
           { name: 'Seine-et-Marne (77)', url: '/departements/77-seine-et-marne/' }],

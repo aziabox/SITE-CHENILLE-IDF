@@ -45,8 +45,8 @@ const body = `
 
 export default {
   url: '/404/',
-  title: 'Page introuvable (404)',
-  description: "La page demandée n'existe pas. Retrouvez les informations sur les chenilles processionnaires : identification, traitement, prévention et zones d'intervention.",
+  title: 'Page introuvable — chenilles processionnaires Île-de-France',
+  description: "La page demandée n'existe pas. Retrouvez l'identification, le traitement et la prévention des chenilles processionnaires en Île-de-France.",
   h1: "Cette page n'existe pas",
   trail: [{ name: 'Accueil', url: '/' }, { name: 'Page introuvable', url: '/404/' }],
   noindex: true,

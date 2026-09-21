@@ -4,7 +4,7 @@ import { note, table } from '../../lib/render.mjs';
 
 export default standardPage({
   url: '/politique-de-confidentialite/',
-  title: 'Politique de confidentialité',
+  title: 'Politique de confidentialité — données et cookies',
   description: "Traitement des données transmises via le formulaire de contact, durée de conservation, destinataires, droits des personnes et politique de cookies.",
   h1: 'Politique de confidentialité',
   trail: [{ name: 'Accueil', url: '/' }, { name: 'Politique de confidentialité', url: '/politique-de-confidentialite/' }],

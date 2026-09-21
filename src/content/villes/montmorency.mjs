@@ -7,7 +7,7 @@ export default standardPage({
   deptSlug: '95-val-d-oise',
   villeTeaser: "coteau boisé où l'habitat monte jusque dans la forêt, sur des terrains en forte pente",
   title: 'Chenilles processionnaires à Montmorency (95160)',
-  description: "Montmorency : un coteau où l'habitat monte jusque dans la forêt, avec des terrains en forte pente et des propriétés anciennes très arborées. Contraintes et stratégie locale.",
+  description: "Montmorency : un coteau où l'habitat monte dans la forêt, sur des terrains en forte pente. Contraintes de chantier et stratégie locale.",
   h1: 'Chenilles processionnaires à Montmorency',
   trail: [{ name: 'Accueil', url: '/' }, { name: "Zones d'intervention", url: '/departements/' },
           { name: "Val-d'Oise (95)", url: '/departements/95-val-d-oise/' },

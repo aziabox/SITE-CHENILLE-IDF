@@ -4,7 +4,7 @@ import { figure, note, table, steps } from '../../lib/render.mjs';
 export default standardPage({
   url: '/piegeage-chenilles-processionnaires/',
   title: 'Piégeage des chenilles processionnaires : colliers et phéromones',
-  description: "Piège à collier sur le tronc et piège à phéromone : comment fonctionnent les deux dispositifs, quand les poser, ce qu'ils apportent réellement et ce qu'ils ne règlent pas.",
+  description: "Collier sur tronc et piège à phéromone : comment fonctionnent les deux dispositifs, quand les poser, et ce qu'ils ne règlent pas.",
   h1: 'Piégeage des chenilles processionnaires',
   trail: [{ name: 'Accueil', url: '/' }, { name: 'Traitement', url: '/traitement-chenilles-processionnaires/' },
           { name: 'Piégeage', url: '/piegeage-chenilles-processionnaires/' }],

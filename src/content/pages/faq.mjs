@@ -130,7 +130,7 @@ const body = groupes.map(g =>
 export default standardPage({
   url: '/faq/',
   title: 'FAQ chenilles processionnaires : toutes les questions',
-  description: "Différence pin / chêne, dangers, conduite à tenir après un contact, méthodes de traitement, prévention, prix, réglementation : les réponses aux questions les plus posées.",
+  description: "Différence pin / chêne, dangers, contact avec un animal, traitements, prévention, prix, réglementation : vingt-trois réponses directes.",
   h1: 'Questions fréquentes sur les chenilles processionnaires',
   trail: [{ name: 'Accueil', url: '/' }, { name: 'FAQ', url: '/faq/' }],
   datePublished: '2026-06-04',

@@ -7,7 +7,7 @@ const villes = villesOf('95-val-d-oise');
 export default standardPage({
   url: '/departements/95-val-d-oise/',
   title: "Chenilles processionnaires dans le Val-d'Oise (95)",
-  description: "Val-d'Oise : coteaux de Montmorency, forêts de L'Isle-Adam et de Carnelle, Vexin français et ville nouvelle de Cergy-Pontoise. Des lisières boisées très proches de l'habitat.",
+  description: "Val-d'Oise : coteaux de Montmorency, forêts de L'Isle-Adam et de Carnelle, Vexin. Des lisières boisées très proches de l'habitat.",
   h1: "Chenilles processionnaires dans le Val-d'Oise (95)",
   trail: [{ name: 'Accueil', url: '/' }, { name: "Zones d'intervention", url: '/departements/' },
           { name: "Val-d'Oise (95)", url: '/departements/95-val-d-oise/' }],

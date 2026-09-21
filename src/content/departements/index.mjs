@@ -31,7 +31,7 @@ const zoneGrid = `
 export default standardPage({
   url: '/departements/',
   title: "Chenilles processionnaires en Île-de-France : zones d'intervention",
-  description: "Nos zones d'intervention contre les chenilles processionnaires : Paris, Seine-et-Marne, Yvelines, Essonne, Hauts-de-Seine, Seine-Saint-Denis, Val-de-Marne et Val-d'Oise.",
+  description: "Nos zones d'intervention contre les chenilles processionnaires : les huit départements franciliens, avec la situation propre à chacun.",
   h1: "Zones d'intervention en Île-de-France",
   trail: [{ name: 'Accueil', url: '/' }, { name: "Zones d'intervention", url: '/departements/' }],
   datePublished: '2026-04-16',

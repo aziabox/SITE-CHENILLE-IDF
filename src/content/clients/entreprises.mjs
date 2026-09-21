@@ -4,7 +4,7 @@ import { table, note, safety } from '../../lib/render.mjs';
 export default standardPage({
   url: '/entreprises/',
   title: 'Chenilles processionnaires : intervention pour les entreprises',
-  description: "Sites tertiaires, parcs d'activités, campings, hôtels, résidences gérées : traiter les chenilles processionnaires sans interrompre l'activité, et documenter la démarche.",
+  description: "Sites tertiaires, parcs d'activités, campings, hôtels : traiter les processionnaires sans interrompre l'activité, et documenter la démarche.",
   h1: 'Intervention pour les entreprises',
   trail: [{ name: 'Accueil', url: '/' }, { name: 'Entreprises', url: '/entreprises/' }],
   datePublished: '2026-04-06',

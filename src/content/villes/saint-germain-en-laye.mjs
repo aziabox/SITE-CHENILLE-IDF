@@ -7,7 +7,7 @@ export default standardPage({
   deptSlug: '78-yvelines',
   villeTeaser: "une forêt domaniale qui enserre la ville, avec une lisière franche et très habitée",
   title: 'Chenilles processionnaires à Saint-Germain-en-Laye (78100)',
-  description: "Saint-Germain-en-Laye : une forêt domaniale de chênes qui enserre la ville sur trois côtés. Pression de lisière, quartiers en première ligne et calendrier d'intervention.",
+  description: "Saint-Germain-en-Laye : une forêt domaniale de chênes qui enserre la ville. Pression de lisière, quartiers en première ligne et calendrier.",
   h1: 'Chenilles processionnaires à Saint-Germain-en-Laye',
   trail: [{ name: 'Accueil', url: '/' }, { name: "Zones d'intervention", url: '/departements/' },
           { name: 'Yvelines (78)', url: '/departements/78-yvelines/' },

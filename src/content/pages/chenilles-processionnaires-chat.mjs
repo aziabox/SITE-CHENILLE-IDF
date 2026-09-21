@@ -4,7 +4,7 @@ import { safety, note } from '../../lib/render.mjs';
 export default standardPage({
   url: '/chenilles-processionnaires-chat/',
   title: 'Chenilles processionnaires et chat : risques et réflexes',
-  description: "Le chat est moins souvent touché que le chien, mais pas à l'abri : voies d'exposition, signes à repérer, gestes immédiats et précautions pour un chat qui sort.",
+  description: "Le chat est moins touché que le chien, mais pas à l'abri : voies d'exposition, signes à repérer et précautions pour un chat qui sort.",
   h1: 'Chenilles processionnaires et chats',
   trail: [{ name: 'Accueil', url: '/' }, { name: 'Prévention', url: '/traitement-preventif/' },
           { name: 'Chats', url: '/chenilles-processionnaires-chat/' }],
