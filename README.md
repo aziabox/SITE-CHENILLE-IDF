@@ -151,6 +151,30 @@ page départementale et au fil d'Ariane.
 
 ---
 
+## Carte interactive
+
+La page d'accueil, la page des zones d'intervention et chaque page
+départementale affichent une carte de l'Île-de-France aux **contours réels**.
+
+* **SVG inline**, donc chaque département est un vrai lien : survol, focus
+  clavier, infobulle native, et mise en évidence du département courant.
+* **Aucune librairie, aucune tuile distante, aucune requête réseau.** Pas de
+  Leaflet, pas de Google Maps, pas de cookie tiers.
+* Environ 16 Ko de tracés inline, soit moins qu'une seule tuile raster.
+
+Données et régénération :
+
+```bash
+node scripts/make-carte-idf.mjs   # src/data/*.geojson -> src/lib/carte-idf-data.mjs
+```
+
+Le GeoJSON source est versionné dans `src/data/`, la régénération fonctionne
+donc hors ligne. La projection (équirectangulaire corrigée en longitude) et la
+simplification (Douglas-Peucker, tolérance réglable) sont écrites dans le
+script, sans dépendance.
+
+Contours : IGN — Admin Express COG. Noms et codes : INSEE.
+
 ## SEO technique
 
 * `title`, `meta description`, `H1` **uniques** sur chaque page (vérifié par l'audit).

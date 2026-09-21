@@ -11,6 +11,7 @@ export default standardPage({
   h1: 'Chenilles processionnaires dans les Yvelines (78)',
   trail: [{ name: 'Accueil', url: '/' }, { name: "Zones d'intervention", url: '/departements/' },
           { name: 'Yvelines (78)', url: '/departements/78-yvelines/' }],
+  carteActive: '78',
   datePublished: '2026-04-22',
   dateModified: '2026-09-16',
   service: {

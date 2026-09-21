@@ -11,6 +11,7 @@ export default standardPage({
   h1: 'Chenilles processionnaires en Seine-Saint-Denis (93)',
   trail: [{ name: 'Accueil', url: '/' }, { name: "Zones d'intervention", url: '/departements/' },
           { name: 'Seine-Saint-Denis (93)', url: '/departements/93-seine-saint-denis/' }],
+  carteActive: '93',
   datePublished: '2026-04-28',
   dateModified: '2026-09-16',
   service: {

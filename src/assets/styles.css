@@ -393,3 +393,59 @@ textarea{min-height:8rem;resize:vertical}
   body{font-size:11pt;color:#000}
   a::after{content:" (" attr(href) ")";font-size:9pt}
 }
+
+/* ---------- Carte interactive Île-de-France ----------------------- */
+.carte{margin:1.75rem auto 0;max-width:52rem}
+.carte__svg{display:block;width:100%;height:auto}
+
+.carte__dept{cursor:pointer}
+.carte__dept path{
+  fill:var(--vert-600);
+  stroke:#fff;
+  stroke-width:2.5;
+  stroke-linejoin:round;
+  transition:fill .15s ease;
+}
+.carte__dept:hover path,
+.carte__dept:focus-visible path{fill:var(--accent)}
+.carte__dept.is-courant path{fill:var(--vert-900)}
+.carte__dept:focus{outline:none}
+.carte__dept:focus-visible path{stroke:var(--vert-900);stroke-width:4}
+
+.carte__nom{
+  fill:#fff;
+  font-family:Georgia,serif;
+  font-size:30px;
+  font-weight:700;
+  pointer-events:none;
+}
+.carte__code{font-family:system-ui,sans-serif;font-weight:600;pointer-events:none}
+.carte__code--grande{fill:#E3EDE4;font-size:24px}
+.carte__code--petite{
+  fill:#fff;
+  font-size:26px;
+  paint-order:stroke;
+  stroke:var(--vert-900);
+  stroke-width:3px;
+  stroke-linejoin:round;
+}
+
+.carte__legende{margin-top:1rem;font-size:.9rem;color:var(--encre-doux);line-height:1.55}
+.carte__aide{margin:0 0 .5rem}
+.carte__cle{margin:0 0 .5rem;font-size:.85rem}
+.carte__cle-titre{
+  display:inline-block;font-size:.68rem;letter-spacing:.09em;text-transform:uppercase;
+  font-weight:700;color:var(--vert-700);margin-right:.4rem;
+}
+.carte__cle a{color:var(--encre-doux);text-decoration:none;border-bottom:1px solid var(--ligne)}
+.carte__cle a:hover{color:var(--accent-fonce);border-bottom-color:var(--accent)}
+.carte__cle b{color:var(--vert-800)}
+.carte__source{margin:0;font-size:.78rem;color:var(--ligne-forte)}
+
+/* Sur petit écran, les codes de la petite couronne deviennent illisibles :
+   on ne les affiche plus, la clé sous la carte prend le relais. */
+@media(max-width:34rem){
+  .carte__code--petite{display:none}
+  .carte__nom{font-size:38px}
+  .carte__code--grande{font-size:30px}
+}

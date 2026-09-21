@@ -1,6 +1,7 @@
 import { site, serviceArea } from '../../lib/site.mjs';
 import { esc, cta, faqBlock, cards, table, figure, keyAnswer } from '../../lib/render.mjs';
 import { posts } from '../blog/posts/_all.mjs';
+import { carteIdf } from '../../lib/carte.mjs';
 
 const recents = posts.slice(0, 4);
 
@@ -189,6 +190,10 @@ ${hero}
   bordent. Les pins d'ornement et les cèdres des parcs urbains, eux, concentrent la processionnaire du pin
   jusqu'au cœur de l'agglomération.</p>
 </section>
+
+<div class="wrap">
+  ${carteIdf({ id: 'carte-accueil' })}
+</div>
 
 <ul class="zone-grid">
   ${serviceArea.map(d => `<li class="zone">

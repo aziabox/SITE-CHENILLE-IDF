@@ -11,6 +11,7 @@ export default standardPage({
   h1: 'Chenilles processionnaires dans les Hauts-de-Seine (92)',
   trail: [{ name: 'Accueil', url: '/' }, { name: "Zones d'intervention", url: '/departements/' },
           { name: 'Hauts-de-Seine (92)', url: '/departements/92-hauts-de-seine/' }],
+  carteActive: '92',
   datePublished: '2026-04-26',
   dateModified: '2026-09-16',
   service: {

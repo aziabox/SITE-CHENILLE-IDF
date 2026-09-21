@@ -12,6 +12,7 @@ export default standardPage({
   h1: 'Chenilles processionnaires en Seine-et-Marne (77)',
   trail: [{ name: 'Accueil', url: '/' }, { name: "Zones d'intervention", url: '/departements/' },
           { name: 'Seine-et-Marne (77)', url: '/departements/77-seine-et-marne/' }],
+  carteActive: '77',
   datePublished: '2026-04-20',
   dateModified: '2026-09-16',
   service: {

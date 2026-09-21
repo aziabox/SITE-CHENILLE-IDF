@@ -8,6 +8,7 @@ export default standardPage({
   h1: 'Chenilles processionnaires à Paris (75)',
   trail: [{ name: 'Accueil', url: '/' }, { name: "Zones d'intervention", url: '/departements/' },
           { name: 'Paris (75)', url: '/departements/75-paris/' }],
+  carteActive: '75',
   datePublished: '2026-04-18',
   dateModified: '2026-09-16',
   service: {

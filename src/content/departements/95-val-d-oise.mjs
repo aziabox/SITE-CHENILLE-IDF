@@ -11,6 +11,7 @@ export default standardPage({
   h1: "Chenilles processionnaires dans le Val-d'Oise (95)",
   trail: [{ name: 'Accueil', url: '/' }, { name: "Zones d'intervention", url: '/departements/' },
           { name: "Val-d'Oise (95)", url: '/departements/95-val-d-oise/' }],
+  carteActive: '95',
   datePublished: '2026-05-02',
   dateModified: '2026-09-16',
   service: {

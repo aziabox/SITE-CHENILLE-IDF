@@ -11,6 +11,7 @@ export default standardPage({
   h1: 'Chenilles processionnaires dans le Val-de-Marne (94)',
   trail: [{ name: 'Accueil', url: '/' }, { name: "Zones d'intervention", url: '/departements/' },
           { name: 'Val-de-Marne (94)', url: '/departements/94-val-de-marne/' }],
+  carteActive: '94',
   datePublished: '2026-04-30',
   dateModified: '2026-09-16',
   service: {

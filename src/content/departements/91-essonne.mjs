@@ -11,6 +11,7 @@ export default standardPage({
   h1: "Chenilles processionnaires en Essonne (91)",
   trail: [{ name: 'Accueil', url: '/' }, { name: "Zones d'intervention", url: '/departements/' },
           { name: 'Essonne (91)', url: '/departements/91-essonne/' }],
+  carteActive: '91',
   datePublished: '2026-04-24',
   dateModified: '2026-09-16',
   service: {

@@ -14,7 +14,7 @@ et schémas documentaires en SVG**, réalisés spécifiquement pour ce site :
 | `echenillage-schema.svg` | Coupe à la perche, confinement, équipement de protection |
 | `piegeage-collier-schema.svg` | Collier étanche, gouttière, sac de collecte |
 | `piege-pheromone-schema.svg` | Piège à entonnoir et capsule de phéromone |
-| `carte-idf-departements.svg` | Schéma des huit départements couverts |
+| *(carte interactive)* | Contours réels des huit départements, générés dans `src/lib/carte-idf-data.mjs` à partir des données IGN Admin Express, et rendus en SVG inline cliquable — voir `src/lib/carte.mjs` |
 
 Ce choix est assumé : un schéma légendé explique mieux la différence entre un nid
 de pin et un nid de chêne qu'une photographie de banque d'images, et il n'expose

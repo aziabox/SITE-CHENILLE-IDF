@@ -1,5 +1,6 @@
 import { esc, anchorId, faqBlock, cta, relatedLinks, frDate, keyAnswer } from './render.mjs';
 import { site } from './site.mjs';
+import { carteIdf } from './carte.mjs';
 
 /**
  * Gabarit editorial commun aux pages de contenu.
@@ -48,7 +49,12 @@ export function standardPage(def) {
   const relatedHtml = def.related
     ? `<div class="prose">${relatedLinks(def.relatedTitle || 'À lire ensuite', def.related)}</div>` : '';
 
-  const body = [head, bodySections, def.afterSections || '', faqHtml, ctaHtml, relatedHtml]
+  // carteActive : code de département à mettre en évidence sur la carte.
+  const carteHtml = def.carteActive
+    ? `<div class="wrap">${carteIdf({ active: def.carteActive, id: 'carte-' + def.carteActive })}</div>`
+    : '';
+
+  const body = [head, bodySections, carteHtml, def.afterSections || '', faqHtml, ctaHtml, relatedHtml]
     .filter(Boolean).join('\n');
 
   return { ...def, sections, body };

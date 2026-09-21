@@ -2,6 +2,7 @@ import { standardPage } from '../../lib/layout.mjs';
 import { esc, figure, table, note } from '../../lib/render.mjs';
 import { serviceArea } from '../../lib/site.mjs';
 import { villesOf } from '../villes/_villes.mjs';
+import { carteIdf } from '../../lib/carte.mjs';
 
 const BLURBS = {
   '75': "Bois de Vincennes et de Boulogne, parcs et cimetières plantés : chêne en périphérie, cèdres et pins d'ornement en cœur de ville.",
@@ -37,7 +38,6 @@ export default standardPage({
   datePublished: '2026-04-16',
   dateModified: '2026-09-16',
   priority: '0.8',
-  primaryImage: '/assets/img/carte-idf-departements.svg',
   itemList: {
     name: "Départements d'intervention",
     items: serviceArea.map(d => ({ name: d.name, url: `/departements/${d.slug}/` }))
@@ -65,9 +65,7 @@ export default standardPage({
       progressé vers le nord au fil des décennies. Elle est aujourd'hui bien installée sur les sols sableux
       du sud francilien, et elle colonise en ville les pins noirs et les cèdres d'ornement des parcs, des
       résidences et des cimetières — des arbres isolés, très ensoleillés, sans prédateur significatif.</p>
-      ${figure({ src: '/assets/img/carte-idf-departements.svg', width: 760, height: 620,
-        alt: "Schéma des huit départements d'Île-de-France avec Paris au centre, la petite couronne et la grande couronne",
-        caption: "Schéma indicatif de la zone couverte. Chaque département fait l'objet d'une page décrivant sa situation propre." })}` },
+      ${carteIdf({ id: 'carte-zones' })}` },
 
     { h2: "Choisir votre département",
       toc: false,
