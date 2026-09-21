@@ -115,24 +115,47 @@ const webmanifest = () => JSON.stringify({
 /** Redirections permanentes (Netlify / Vercel / Apache). */
 function redirectFiles(redirects) {
   const netlify = redirects.map(r => `${r.from}  ${r.to}  301`).join('\n') + '\n';
-  const htaccess = `# Redirections 301
-RewriteEngine On
-${redirects.map(r => `RedirectPermanent ${r.from} ${r.to}`).join('\n')}
+  const htaccess = `# ---------------------------------------------------------------
+# Apache — configuration du site statique.
+# Chaque directive est protegee par <IfModule> : sur un hebergement ou le
+# module correspondant est absent, Apache ignore le bloc au lieu de
+# renvoyer une erreur 500.
+# ---------------------------------------------------------------
 
-# Page 404
+# Fichier d'index. Sans cette ligne, un hebergeur dont l'index par defaut
+# ne contient pas index.html sert un dossier vide : le visiteur recoit
+# alors un 403 (listing interdit) sur la page d'accueil.
+DirectoryIndex index.html
+
+# Pas de listing de repertoire.
+Options -Indexes
+
+# Pages d'erreur
+ErrorDocument 403 /404.html
 ErrorDocument 404 /404.html
 
-# Cache des ressources versionnees
+# Redirections permanentes des anciennes URL
+<IfModule mod_alias.c>
+${redirects.map(r => `  RedirectPermanent ${r.from} ${r.to}`).join('\n')}
+</IfModule>
+
+# Cache
 <IfModule mod_expires.c>
   ExpiresActive On
   ExpiresByType text/css "access plus 1 year"
   ExpiresByType image/svg+xml "access plus 1 month"
   ExpiresByType image/png "access plus 1 month"
+  ExpiresByType text/html "access plus 5 minutes"
 </IfModule>
 
 # Compression
 <IfModule mod_deflate.c>
   AddOutputFilterByType DEFLATE text/html text/css application/javascript image/svg+xml application/xml
+</IfModule>
+
+# En-tetes
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
 </IfModule>
 `;
   return { netlify, htaccess };
