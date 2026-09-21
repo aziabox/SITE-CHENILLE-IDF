@@ -38,6 +38,10 @@ export const site = {
   // Profil Google Business : ne rien publier tant que la fiche n'existe pas.
   googleBusinessUrl: '[A COMPLETER : URL de la fiche etablissement Google]',
   openingHours: 'Lu-Sa 08:00-19:00',
+  // Point de reception du formulaire de contact. Tant qu'il n'est pas
+  // renseigne, le formulaire est affiche mais desactive, avec un renvoi
+  // explicite vers le telephone (voir content/pages/contact.mjs).
+  formEndpoint: '[A COMPLETER : URL de traitement du formulaire]',
   openingHoursSchema: [
     { days: ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'], open: '08:00', close: '19:00' }
   ],

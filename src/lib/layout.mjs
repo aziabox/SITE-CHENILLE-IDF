@@ -13,7 +13,7 @@ export function standardPage(def) {
 <nav class="toc" aria-labelledby="toc-title">
   <p class="toc__title" id="toc-title">Sur cette page</p>
   <ol>${sections.map(s => `<li><a href="#${s.id}">${esc(s.tocLabel || s.h2)}</a></li>`).join('')}
-  ${def.faq && def.faq.length ? `<li><a href="#faq">Questions fréquentes</a></li>` : ''}</ol>
+  ${def.renderFaq !== false && def.faq && def.faq.length ? `<li><a href="#faq">Questions fréquentes</a></li>` : ''}</ol>
 </nav>` : '';
 
   const meta = [];
@@ -38,7 +38,10 @@ export function standardPage(def) {
   ${s.html}
 </section>`).join('');
 
-  const faqHtml = def.faq && def.faq.length
+  // renderFaq: false -> les questions sont deja affichees par la page
+  // (ex. FAQ groupee par theme) ; on ne les repete pas, mais elles restent
+  // utilisees pour les donnees structurees FAQPage.
+  const faqHtml = (def.renderFaq !== false && def.faq && def.faq.length)
     ? `<div class="prose">${faqBlock(def.faq, def.faqHeading || 'Questions fréquentes')}</div>` : '';
 
   const ctaHtml = def.cta ? cta(def.cta) : '';
