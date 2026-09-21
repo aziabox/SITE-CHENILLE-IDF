@@ -6,6 +6,8 @@
   "type": "module",
   "scripts": {
     "build": "node build.mjs",
+    "prestart": "node build.mjs",
+    "start": "node scripts/serve.mjs",
     "serve": "node scripts/serve.mjs",
     "audit": "node scripts/audit.mjs",
     "check": "node build.mjs && node scripts/audit.mjs"

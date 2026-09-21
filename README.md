@@ -11,8 +11,9 @@ Zone d'intervention : les huit départements franciliens (75, 77, 78, 91, 92, 93
 ## Démarrage
 
 ```bash
-npm run build     # génère ./dist
-npm run serve     # prévisualisation sur http://localhost:4173
+npm start         # build puis démarrage du serveur (PORT lu dans l'environnement)
+npm run build     # génère ./dist uniquement
+npm run serve     # sert ./dist sans rebuild
 npm run audit     # audit SEO / contenu / duplication / liens / accessibilité
 npm run check     # build + audit
 ```
@@ -22,6 +23,38 @@ le générateur, l'encodeur PNG et l'audit n'utilisent que des modules natifs.
 
 `dist/` et `node_modules/` ne sont pas versionnés : `npm run build` régénère
 l'intégralité du site en moins d'une seconde.
+
+---
+
+## Déploiement
+
+Le site est **statique** : le dossier `dist/` généré par `npm run build` se suffit
+à lui-même. Trois cas de figure, tous couverts par le dépôt.
+
+### Plateforme qui lance `npm start` (Railway, Render, Clever Cloud, Heroku…)
+
+Rien à configurer. `npm start` exécute d'abord `node build.mjs` (script `prestart`)
+puis démarre un serveur HTTP natif qui écoute sur `process.env.PORT` et `0.0.0.0`.
+Un `Procfile` (`web: npm start`) est fourni pour les plateformes qui le lisent.
+
+### Hébergeur statique (Netlify, Vercel, Cloudflare Pages…)
+
+* `netlify.toml` — commande `npm run build`, publication de `dist`, Node 20.
+* `vercel.json` — même chose, avec `trailingSlash: true` pour correspondre aux
+  URL canoniques du site (`/echenillage/` et non `/echenillage`).
+
+Si la plateforme demande les réglages à la main : **commande de build**
+`npm run build`, **répertoire de sortie** `dist`, **version de Node** 20 ou plus.
+
+### Hébergement classique (FTP, Apache, nginx)
+
+Téléverser le contenu de `dist/`. Le build y place déjà `.htaccess`
+(redirections 301, `ErrorDocument 404`, cache, compression) et `_redirects`
+pour les hébergeurs qui lisent ce format.
+
+> L'import échoue avec « dépôt ou branche introuvable » ? C'est que **le dépôt
+> Git ne contient encore aucun commit**. Une plateforme ne peut pas importer un
+> dépôt vide, indépendamment du contenu de `package.json`.
 
 ---
 
