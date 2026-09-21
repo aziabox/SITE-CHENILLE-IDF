@@ -127,9 +127,6 @@ function redirectFiles(redirects) {
 # alors un 403 (listing interdit) sur la page d'accueil.
 DirectoryIndex index.html
 
-# Pas de listing de repertoire.
-Options -Indexes
-
 # Pages d'erreur
 ErrorDocument 403 /404.html
 ErrorDocument 404 /404.html

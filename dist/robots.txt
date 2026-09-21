@@ -1,0 +1,14 @@
+# robots.txt — Chenilles Processionnaires Île-de-France
+User-agent: *
+Allow: /
+Disallow: /merci/
+
+# Moteurs generatifs : contenu accessible a la lecture.
+User-agent: GPTBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://www.chenilles-processionnaires-idf.fr/sitemap.xml

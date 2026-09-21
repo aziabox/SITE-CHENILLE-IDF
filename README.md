@@ -46,11 +46,25 @@ Un `Procfile` (`web: npm start`) est fourni pour les plateformes qui le lisent.
 Si la plateforme demande les réglages à la main : **commande de build**
 `npm run build`, **répertoire de sortie** `dist`, **version de Node** 20 ou plus.
 
-### Hébergement classique (FTP, Apache, nginx)
+### Hébergement mutualisé qui déploie le dépôt tel quel (Hostinger, OVH, o2switch…)
 
-Téléverser le contenu de `dist/`. Le build y place déjà `.htaccess`
-(redirections 301, `ErrorDocument 404`, cache, compression) et `_redirects`
-pour les hébergeurs qui lisent ce format.
+Ces hébergeurs clonent le dépôt directement dans `public_html` **sans exécuter
+de build**. Deux conséquences, traitées dans le dépôt :
+
+* **`dist/` est versionné.** C'est volontaire : sans cela, la racine déployée ne
+  contiendrait aucun `index.html`, et Apache répondrait `403 Forbidden`.
+  Il faut donc lancer `npm run build` et committer `dist/` après chaque
+  modification de contenu.
+* **Un `.htaccess` à la racine** sert `dist/` de façon transparente, pour que
+  les URL publiques restent `/echenillage/` et non `/dist/echenillage/`. Une
+  requête vers `/dist/...` est redirigée en 301 vers l'URL canonique.
+
+### Hébergement classique par FTP
+
+Téléverser uniquement le **contenu** de `dist/` dans `public_html`. Le build y
+place déjà son propre `.htaccess` (redirections 301, `ErrorDocument`, cache,
+compression) et `_redirects` pour les hébergeurs qui lisent ce format. Dans ce
+cas, le `.htaccess` de la racine du dépôt n'est pas utilisé.
 
 > L'import échoue avec « dépôt ou branche introuvable » ? C'est que **le dépôt
 > Git ne contient encore aucun commit**. Une plateforme ne peut pas importer un

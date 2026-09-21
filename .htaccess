@@ -1,0 +1,35 @@
+# ===================================================================
+# Racine du dépôt — hébergement mutualisé qui déploie le dépôt tel quel
+# dans public_html, sans exécuter de build (Hostinger, OVH, o2switch…).
+#
+# Le site généré est dans dist/. Ce fichier sert ce dossier de manière
+# transparente : l'URL publique reste https://exemple.fr/echenillage/
+# et jamais /dist/echenillage/.
+#
+# L'ordre des règles compte : une règle marquée [L] interrompt le
+# traitement, donc les blocages doivent précéder la réécriture générale.
+# ===================================================================
+
+# Si mod_rewrite venait à manquer, la page d'accueil reste servie.
+DirectoryIndex index.html dist/index.html
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # 1. Une requête externe vers /dist/... est redirigée vers l'URL canonique.
+  #    THE_REQUEST ne contient que la requête d'origine : les réécritures
+  #    internes ci-dessous ne déclenchent donc pas cette règle.
+  RewriteCond %{THE_REQUEST} \s/+dist/(\S*)\s [NC]
+  RewriteRule ^ /%1 [R=301,L]
+
+  # 2. Les fichiers du générateur ne sont pas des pages.
+  RewriteRule ^(src|scripts|node_modules)/ - [F,L]
+  RewriteRule ^(package\.json|package-lock\.json|build\.mjs)$ - [F,L]
+  RewriteRule ^(netlify\.toml|vercel\.json|Procfile|README\.md|PHOTOS\.md)$ - [F,L]
+
+  # 3. Tout le reste est servi depuis dist/.
+  #    Le préfixe négatif (?!dist/) empêche toute boucle de réécriture.
+  RewriteCond %{REQUEST_URI} !^/dist/
+  RewriteRule ^(?!dist/)(.*)$ dist/$1 [L]
+</IfModule>

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400" role="img" width="960" height="400">
+  <title>Calendrier annuel comparé de la processionnaire du pin et de la processionnaire du chêne</title>
+  <rect width="960" height="400" fill="#FFFFFF"/>
+  <g font-family="system-ui,sans-serif" font-size="13" fill="#48584F">
+    <text x="30" y="40" font-size="15" fill="#132C21">Périodes d'activité observables en Île-de-France</text>
+    <g>
+      <text x="196" y="74">J</text><text x="256" y="74">F</text><text x="316" y="74">M</text><text x="376" y="74">A</text>
+      <text x="436" y="74">M</text><text x="496" y="74">J</text><text x="556" y="74">J</text><text x="616" y="74">A</text>
+      <text x="676" y="74">S</text><text x="736" y="74">O</text><text x="796" y="74">N</text><text x="856" y="74">D</text>
+    </g>
+  </g>
+  <g stroke="#EDE7D9" stroke-width="1">
+    <line x1="190" y1="86" x2="190" y2="330"/><line x1="250" y1="86" x2="250" y2="330"/>
+    <line x1="310" y1="86" x2="310" y2="330"/><line x1="370" y1="86" x2="370" y2="330"/>
+    <line x1="430" y1="86" x2="430" y2="330"/><line x1="490" y1="86" x2="490" y2="330"/>
+    <line x1="550" y1="86" x2="550" y2="330"/><line x1="610" y1="86" x2="610" y2="330"/>
+    <line x1="670" y1="86" x2="670" y2="330"/><line x1="730" y1="86" x2="730" y2="330"/>
+    <line x1="790" y1="86" x2="790" y2="330"/><line x1="850" y1="86" x2="850" y2="330"/>
+    <line x1="910" y1="86" x2="910" y2="330"/>
+  </g>
+
+  <g font-family="system-ui,sans-serif" font-size="13">
+    <text x="30" y="112" fill="#132C21" font-size="14">PIN</text>
+    <rect x="670" y="98" width="240" height="22" fill="#3D8560" opacity=".85"/>
+    <rect x="190" y="98" width="180" height="22" fill="#3D8560" opacity=".85"/>
+    <text x="196" y="114" fill="#FFFFFF">chenilles dans le nid</text>
+    <text x="676" y="114" fill="#FFFFFF">chenilles dans le nid</text>
+
+    <rect x="250" y="130" width="150" height="22" fill="#B0552F" opacity=".9"/>
+    <text x="256" y="146" fill="#FFFFFF">procession au sol</text>
+
+    <rect x="550" y="162" width="180" height="22" fill="#BFC9BD"/>
+    <text x="556" y="178" fill="#16211B">vol des papillons</text>
+
+    <rect x="670" y="194" width="180" height="22" fill="#255139"/>
+    <text x="676" y="210" fill="#FFFFFF">échenillage / piégeage possible</text>
+  </g>
+
+  <line x1="30" y1="234" x2="930" y2="234" stroke="#D9DFD6"/>
+
+  <g font-family="system-ui,sans-serif" font-size="13">
+    <text x="30" y="264" fill="#132C21" font-size="14">CHÊNE</text>
+    <rect x="370" y="250" width="180" height="22" fill="#3D8560" opacity=".85"/>
+    <text x="376" y="266" fill="#FFFFFF">chenilles actives, nids visibles</text>
+
+    <rect x="430" y="282" width="120" height="22" fill="#B0552F" opacity=".9"/>
+    <text x="436" y="298" fill="#FFFFFF">risque urticant maximal</text>
+
+    <rect x="550" y="314" width="150" height="22" fill="#BFC9BD"/>
+    <text x="556" y="330" fill="#16211B">vol des papillons</text>
+  </g>
+
+  <text x="30" y="372" font-family="system-ui,sans-serif" font-size="12.5" fill="#48584F">Repères indicatifs : les dates réelles varient chaque année selon la météo, l'altitude et l'exposition du peuplement.</text>
+</svg>
