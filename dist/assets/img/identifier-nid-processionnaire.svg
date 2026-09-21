@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400" role="img" width="960" height="400">
+  <title>Trois formes à ne pas confondre : nid de processionnaire du pin, toile de chenille commune, gui</title>
+  <rect width="960" height="400" fill="#FFFFFF"/>
+  <text x="40" y="44" font-family="Georgia,serif" font-size="20" fill="#132C21">Ce que l'on confond le plus souvent avec un nid de processionnaires</text>
+
+  <g transform="translate(150,150)">
+    <path d="M-70 40 0 0l70 40" fill="none" stroke="#255139" stroke-width="4"/>
+    <ellipse cx="0" cy="0" rx="46" ry="36" fill="#FFFFFF" stroke="#255139" stroke-width="2.5"/>
+    <path d="M-30-16q30 12 60 0M-34 0q34 14 68 0M-30 16q30 12 60 0" fill="none" stroke="#BFC9BD" stroke-width="1.6"/>
+    <text x="0" y="96" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" fill="#132C21">Nid de processionnaire</text>
+    <text x="0" y="118" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13.5" fill="#48584F">soie dense et opaque, en bout</text>
+    <text x="0" y="136" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13.5" fill="#48584F">de rameau, aiguilles rousses autour</text>
+  </g>
+
+  <g transform="translate(480,150)">
+    <path d="M-70 40 0 0l70 40" fill="none" stroke="#255139" stroke-width="4"/>
+    <path d="M-44-24 44 24M-44 24 44-24M-50 0h100M0-34v68" stroke="#BFC9BD" stroke-width="1.6"/>
+    <circle cx="0" cy="0" r="40" fill="none" stroke="#BFC9BD" stroke-width="1.6"/>
+    <circle cx="0" cy="0" r="22" fill="none" stroke="#BFC9BD" stroke-width="1.6"/>
+    <text x="0" y="96" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" fill="#132C21">Toile d'araignée ou d'hyponomeute</text>
+    <text x="0" y="118" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13.5" fill="#48584F">translucide, on voit le rameau</text>
+    <text x="0" y="136" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13.5" fill="#48584F">au travers ; sans danger urticant</text>
+  </g>
+
+  <g transform="translate(810,150)">
+    <path d="M-70 40 0 0l70 40" fill="none" stroke="#255139" stroke-width="4"/>
+    <g fill="#3D8560"><ellipse cx="0" cy="-10" rx="16" ry="9" transform="rotate(-30)"/>
+      <ellipse cx="-22" cy="6" rx="15" ry="8"/><ellipse cx="22" cy="6" rx="15" ry="8"/>
+      <ellipse cx="-10" cy="26" rx="14" ry="8"/><ellipse cx="14" cy="26" rx="14" ry="8"/></g>
+    <circle cx="0" cy="8" r="4" fill="#EDE7D9" stroke="#BFC9BD"/>
+    <text x="0" y="96" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" fill="#132C21">Gui</text>
+    <text x="0" y="118" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13.5" fill="#48584F">boule verte de feuilles,</text>
+    <text x="0" y="136" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13.5" fill="#48584F">jamais de soie blanche</text>
+  </g>
+  <path d="M40 330h880" stroke="#D9DFD6" stroke-width="2"/>
+  <text x="40" y="362" font-family="system-ui,sans-serif" font-size="13" fill="#48584F">Observez toujours depuis le sol, sans secouer la branche : un nid manipulé libère des milliers de poils urticants.</text>
+</svg>

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 660" role="img" width="960" height="660">
+  <title>Pin et chêne porteurs de nids de chenilles processionnaires près d'une habitation</title>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#17392A"/><stop offset="1" stop-color="#0F2A1F"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="660" fill="url(#sky)"/>
+  <circle cx="790" cy="120" r="260" fill="#2E6A4E" opacity=".18"/>
+
+  <!-- Pin sylvestre, nid en extremite de branche -->
+  <g stroke="#7FB995" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M250 560V250"/>
+    <path d="M250 300 165 250M250 300l85-50M250 370 150 320M250 370l100-50M250 440 170 400M250 440l80-40"/>
+  </g>
+  <g fill="#2E6A4E">
+    <ellipse cx="250" cy="232" rx="78" ry="46"/><ellipse cx="180" cy="300" rx="62" ry="34"/>
+    <ellipse cx="322" cy="292" rx="60" ry="32"/><ellipse cx="160" cy="372" rx="58" ry="30"/>
+    <ellipse cx="342" cy="362" rx="56" ry="30"/>
+  </g>
+  <!-- nid soyeux blanc, caracteristique du pin -->
+  <g>
+    <ellipse cx="336" cy="268" rx="30" ry="24" fill="#F2F6F1"/>
+    <ellipse cx="336" cy="268" rx="30" ry="24" fill="none" stroke="#C9D8CB" stroke-width="1.5"/>
+    <path d="M318 254q18 8 36 0M316 268q20 9 40 0M320 282q16 7 32 0" stroke="#D5E2D6" stroke-width="1.2" fill="none"/>
+  </g>
+  <text x="392" y="252" fill="#EDF3EC" font-family="Georgia,serif" font-size="19">Pin</text>
+  <text x="392" y="274" fill="#9FCBAF" font-family="system-ui,sans-serif" font-size="14">nid soyeux en bout de branche</text>
+
+  <!-- Chene, nid plaque contre le tronc -->
+  <g>
+    <path d="M700 560V300" stroke="#7FB995" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <path d="M700 380 640 330M700 350l62-46M700 420 652 386" stroke="#7FB995" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <g fill="#2E6A4E">
+      <circle cx="700" cy="252" r="72"/><circle cx="626" cy="292" r="52"/>
+      <circle cx="774" cy="288" r="56"/><circle cx="660" cy="212" r="44"/><circle cx="748" cy="208" r="40"/>
+    </g>
+  </g>
+  <!-- nid plat en manchon sur le tronc -->
+  <g>
+    <path d="M688 400q24-12 26 22 2 34-26 40-10-30 0-62Z" fill="#F2F6F1"/>
+    <path d="M688 400q24-12 26 22 2 34-26 40" fill="none" stroke="#C9D8CB" stroke-width="1.5"/>
+  </g>
+  <text x="742" y="424" fill="#EDF3EC" font-family="Georgia,serif" font-size="19">Chêne</text>
+  <text x="742" y="446" fill="#9FCBAF" font-family="system-ui,sans-serif" font-size="14">nid plat contre le tronc</text>
+
+  <!-- Sol et procession -->
+  <path d="M0 560h960" stroke="#3D8560" stroke-width="2" opacity=".5"/>
+  <g fill="#F2F6F1">
+    <circle cx="330" cy="606" r="13"/><circle cx="356" cy="610" r="12"/><circle cx="381" cy="604" r="12"/>
+    <circle cx="406" cy="609" r="11"/><circle cx="430" cy="604" r="11"/><circle cx="453" cy="608" r="10"/>
+    <circle cx="475" cy="604" r="10"/><circle cx="496" cy="608" r="9"/><circle cx="516" cy="604" r="9"/>
+    <circle cx="534" cy="607" r="8"/><circle cx="551" cy="604" r="8"/>
+    <circle cx="315" cy="596" r="4"/><circle cx="315" cy="616" r="4"/>
+  </g>
+  <text x="330" y="648" fill="#9FCBAF" font-family="system-ui,sans-serif" font-size="14">procession au sol, en file indienne</text>
+
+  <!-- Habitation -->
+  <g stroke="#7FB995" stroke-width="2.5" fill="none">
+    <path d="M60 560v-86h120v86M48 474 120 424l72 50"/>
+    <rect x="98" y="512" width="34" height="48"/>
+  </g>
+</svg>

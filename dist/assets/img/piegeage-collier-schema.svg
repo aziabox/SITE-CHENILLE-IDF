@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 440" role="img" width="960" height="440">
+  <title>Schéma d'un collier de piégeage posé sur le tronc d'un pin</title>
+  <rect width="960" height="440" fill="#FFFFFF"/>
+  <text x="50" y="48" font-family="Georgia,serif" font-size="20" fill="#132C21">Piège à collier : intercepter la procession pendant la descente</text>
+
+  <!-- tronc -->
+  <rect x="330" y="80" width="90" height="300" fill="#EDE7D9"/>
+  <path d="M348 80v300M372 80v300M398 80v300" stroke="#D9C9A8" stroke-width="2"/>
+
+  <!-- chenilles descendant -->
+  <g fill="#48584F">
+    <circle cx="362" cy="120" r="7"/><circle cx="364" cy="136" r="7"/><circle cx="360" cy="152" r="6.5"/>
+    <circle cx="364" cy="167" r="6.5"/><circle cx="361" cy="182" r="6"/>
+  </g>
+  <path d="M470 140 396 140" stroke="#B0552F" stroke-width="2" marker-end="url(#a)"/>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+    <path d="M0 0 8 4 0 8Z" fill="#B0552F"/></marker></defs>
+  <text x="480" y="134" font-family="system-ui,sans-serif" font-size="14" fill="#16211B">les chenilles quittent le nid</text>
+  <text x="480" y="152" font-family="system-ui,sans-serif" font-size="14" fill="#16211B">et descendent le long du tronc</text>
+
+  <!-- collier / gouttiere -->
+  <path d="M322 210h106v20H322z" fill="#255139"/>
+  <path d="M428 220 470 244l0 34-42-22Z" fill="#3D8560"/>
+  <path d="M322 230q54 24 106 0" fill="none" stroke="#132C21" stroke-width="2"/>
+  <text x="120" y="216" font-family="system-ui,sans-serif" font-size="14" fill="#16211B" text-anchor="end">collier étanche</text>
+  <line x1="126" y1="212" x2="318" y2="216" stroke="#BFC9BD" stroke-width="1.5"/>
+
+  <!-- sac collecteur -->
+  <path d="M470 278q-8 62 30 74 38-12 30-74Z" fill="#EDE7D9" stroke="#48584F" stroke-width="2"/>
+  <g fill="#48584F" opacity=".7">
+    <circle cx="492" cy="326" r="6"/><circle cx="506" cy="336" r="6"/><circle cx="500" cy="312" r="5"/>
+    <circle cx="514" cy="320" r="5"/>
+  </g>
+  <text x="556" y="316" font-family="system-ui,sans-serif" font-size="14" fill="#16211B">sac de collecte fermé,</text>
+  <text x="556" y="334" font-family="system-ui,sans-serif" font-size="14" fill="#16211B">relevé et détruit par le technicien</text>
+
+  <path d="M180 380h600" stroke="#D9DFD6" stroke-width="2"/>
+  <text x="180" y="410" font-family="system-ui,sans-serif" font-size="13" fill="#48584F">Le piège s'installe avant la descente et se surveille jusqu'à la fin des processions. Il ne concerne que la processionnaire du pin.</text>
+</svg>

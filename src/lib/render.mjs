@@ -506,7 +506,11 @@ const inlineJs = `
 
 export function renderPage(page, assets) {
   const canonical = abs(page.url);
-  const ogImage = abs(page.ogImage || page.primaryImage || '/assets/img/og-default.png');
+  // Les illustrations du site sont en SVG : les reseaux sociaux ne les
+  // affichent pas de maniere fiable, on retombe donc sur le visuel PNG.
+  const rasterCandidate = [page.ogImage, page.primaryImage]
+    .find(u => u && /\.(png|jpe?g|webp)$/i.test(u));
+  const ogImage = abs(rasterCandidate || '/assets/img/og-default.png');
   const robots = page.noindex
     ? 'noindex, follow'
     : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1';
