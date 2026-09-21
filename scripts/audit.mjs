@@ -5,8 +5,10 @@
  */
 import { promises as fs } from 'node:fs';
 import path from 'node:path';
+import { site } from '../src/lib/site.mjs';
 
 const DIST = path.join(process.cwd(), 'dist');
+const PLACEHOLDER_PREFIX = '[A COMPLETER';
 const errors = [];
 const warnings = [];
 const infos = [];
@@ -155,6 +157,30 @@ for (const p of pages) {
 for (const p of pages) {
   if (p.html.includes('[A COMPLETER')) err(`${p.url} : placeholder brut publié dans le HTML`);
   if (/lorem ipsum/i.test(p.html)) err(`${p.url} : texte de remplissage détecté`);
+}
+
+/* --- 5 bis. Diffusion des informations d'identification --- */
+// Quand site.publishIdentity vaut false, la denomination legale et l'adresse
+// du siege ne doivent apparaitre que sur les pages legales, ou elles sont
+// juridiquement obligatoires.
+if (!site.publishIdentity) {
+  const PAGES_LEGALES = new Set(['/mentions-legales/', '/politique-de-confidentialite/']);
+  const secrets = [
+    ['dénomination légale', site.legalName],
+    ['adresse du siège', site.address.street],
+    ['commune du siège', site.address.city],
+    ['SIREN', site.siren],
+    ['numéro RCS', site.rcs]
+  ].filter(([, v]) => typeof v === 'string' && v.length > 4 && !v.startsWith(PLACEHOLDER_PREFIX));
+
+  for (const p of pages) {
+    if (PAGES_LEGALES.has(p.url)) continue;
+    for (const [label, valeur] of secrets) {
+      if (p.html.includes(valeur)) {
+        err(`${p.url} : ${label} publiée hors des pages légales alors que site.publishIdentity vaut false`);
+      }
+    }
+  }
 }
 
 /* --- 6. Duplication de contenu --- */

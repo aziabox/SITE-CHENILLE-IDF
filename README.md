@@ -94,9 +94,26 @@ structurées correspondantes ne sont pas émises.
 
 Les informations d'identification de l'entreprise (dénomination, SIREN, SIRET,
 RCS, code APE, adresse, directeur de la publication) et celles de l'hébergeur
-sont renseignées. Elles alimentent à la fois les mentions légales, la politique
-de confidentialité, le NAP du pied de page et les données structurées
-`PestControlService`.
+sont renseignées.
+
+### Diffusion des informations d'identification
+
+`site.publishIdentity` contrôle où ces informations apparaissent. Il vaut
+actuellement **`false`** :
+
+* **Pages légales** — mentions légales et politique de confidentialité :
+  dénomination, adresse, SIREN, SIRET, RCS. Obligatoire, donc toujours publié.
+* **Toutes les autres pages** — rien. Ni dans le pied de page, ni dans les
+  données structurées. `PestControlService` n'est pas émis, et `Organization`
+  ne porte ni `legalName` ni `address`.
+
+Passer le champ à `true` diffuse la dénomination et l'adresse partout : NAP
+cohérent en pied de page et fiche `PestControlService`, ce qui aide le
+référencement local, au prix de l'exposition de l'adresse du siège sur chaque
+page.
+
+L'audit vérifie cette règle : si `publishIdentity` vaut `false` et qu'une de ces
+informations apparaît hors des pages légales, il échoue en signalant la page.
 
 Le numéro de téléphone **07 56 82 27 85** est déjà en place partout
 (en-tête, menu mobile, sections, pied de page, page contact), en lien

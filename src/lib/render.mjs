@@ -197,9 +197,9 @@ const organizationNode = () => {
       'échenillage', 'piégeage des chenilles processionnaires'
     ]
   };
-  if (hasValue(site.legalName)) node.legalName = site.legalName;
+  if (site.publishIdentity && hasValue(site.legalName)) node.legalName = site.legalName;
   if (hasValue(site.email)) node.email = site.email;
-  if (hasValue(site.address.street) && hasValue(site.address.city)) {
+  if (site.publishIdentity && hasValue(site.address.street) && hasValue(site.address.city)) {
     node.address = {
       '@type': 'PostalAddress',
       streetAddress: site.address.street,
@@ -228,6 +228,7 @@ const websiteNode = () => ({
  * aucun faux etablissement n'est declare aux moteurs.
  */
 const localBusinessNode = () => {
+  if (!site.publishIdentity) return null;
   if (!hasValue(site.address.street) || !hasValue(site.address.city)) return null;
   return {
     '@type': 'PestControlService',
@@ -437,7 +438,7 @@ const footerHtml = () => `
         <a href="${site.phoneHref}" data-cta="tel" data-cta-zone="footer">${site.phoneDisplay}</a>
         <span class="footer__hours">${esc(site.openingHours)}</span>
       </p>
-      ${hasValue(site.address.street) && hasValue(site.address.city) ? `
+      ${site.publishIdentity && hasValue(site.address.street) && hasValue(site.address.city) ? `
       <p class="footer__nap">
         ${hasValue(site.legalName) ? `<span class="footer__nap-nom">${esc(site.legalName)}</span>` : ''}
         ${esc(site.address.street)}<br>${esc(site.address.postalCode)} ${esc(site.address.city)}

@@ -44,6 +44,19 @@ export const site = {
     country: 'FR'
   },
 
+  // Diffusion des informations d'identification en dehors des pages legales.
+  //
+  //   false -> ni la denomination legale, ni l'adresse du siege n'apparaissent
+  //            sur les pages courantes : ni dans le pied de page, ni dans les
+  //            donnees structurees. Elles restent publiees sur les mentions
+  //            legales et la politique de confidentialite, ou elles sont
+  //            juridiquement obligatoires.
+  //
+  //   true  -> denomination et adresse diffusees partout. Meilleur pour le
+  //            referencement local (NAP coherent, fiche LocalBusiness), mais
+  //            expose l'adresse du siege sur chaque page.
+  publishIdentity: false,
+
   // --- Hebergement du site ---------------------------------------------
   host: {
     name: 'Hostinger International Ltd',
