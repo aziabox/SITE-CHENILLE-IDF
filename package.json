@@ -1,0 +1,14 @@
+{
+  "name": "site-chenilles-processionnaires-idf",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site specialise chenilles processionnaires - Ile-de-France. Generateur statique sans dependance.",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "serve": "node scripts/serve.mjs",
+    "audit": "node scripts/audit.mjs",
+    "check": "node build.mjs && node scripts/audit.mjs"
+  },
+  "engines": { "node": ">=20" }
+}

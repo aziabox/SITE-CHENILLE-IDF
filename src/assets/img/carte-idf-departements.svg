@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 620" role="img" width="760" height="620">
+  <title>Schéma des huit départements d'Île-de-France couverts par nos interventions</title>
+  <rect width="760" height="620" fill="#F7F4EC"/>
+  <g font-family="system-ui,sans-serif" stroke="#FFFFFF" stroke-width="3">
+    <!-- Grande couronne -->
+    <path d="M250 40h280l40 90-60 70-150-30-140 40-30-80Z" fill="#3D8560" opacity=".55"/>
+    <path d="M570 130l150 60-40 240-190-40-30-140 60-70Z" fill="#255139" opacity=".8"/>
+    <path d="M40 150l180-30 30 80-20 150-60 90-130-60Z" fill="#2E6A4E" opacity=".7"/>
+    <path d="M170 440l60-90 160 30 100 40-40 160-220-20Z" fill="#3D8560" opacity=".45"/>
+    <!-- Petite couronne -->
+    <path d="M250 200l110-25 20 70-70 50-70-25Z" fill="#255139" opacity=".55"/>
+    <path d="M380 175l110 25-10 70-100 20-20-70Z" fill="#2E6A4E" opacity=".85"/>
+    <path d="M310 295l70-50 100 20 10 80-110 25-60-35Z" fill="#3D8560" opacity=".75"/>
+    <!-- Paris -->
+    <ellipse cx="378" cy="252" rx="52" ry="34" fill="#132C21"/>
+  </g>
+  <g font-family="system-ui,sans-serif" font-size="14" fill="#16211B" text-anchor="middle">
+    <text x="360" y="90" font-size="16" fill="#132C21">Val-d'Oise</text><text x="360" y="110" fill="#48584F">95</text>
+    <text x="600" y="290" font-size="16" fill="#FFFFFF">Seine-et-Marne</text><text x="600" y="310" fill="#D4E2D6">77</text>
+    <text x="120" y="270" font-size="16" fill="#FFFFFF">Yvelines</text><text x="120" y="290" fill="#D4E2D6">78</text>
+    <text x="330" y="520" font-size="16" fill="#132C21">Essonne</text><text x="330" y="540" fill="#48584F">91</text>
+    <text x="298" y="232" font-size="13" fill="#FFFFFF">92</text>
+    <text x="440" y="212" font-size="13" fill="#FFFFFF">93</text>
+    <text x="420" y="330" font-size="13" fill="#FFFFFF">94</text>
+    <text x="378" y="258" font-size="14" fill="#FFFFFF">Paris</text>
+  </g>
+  <g font-family="system-ui,sans-serif" font-size="13" fill="#48584F">
+    <text x="40" y="576">Schéma indicatif des zones couvertes — Paris (75), Hauts-de-Seine (92),</text>
+    <text x="40" y="596">Seine-Saint-Denis (93), Val-de-Marne (94) et la grande couronne.</text>
+  </g>
+</svg>
