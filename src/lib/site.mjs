@@ -14,18 +14,41 @@ export const site = {
   // --- Identite --------------------------------------------------------
   name: 'Chenilles Processionnaires Île-de-France',
   shortName: 'Processionnaires IDF',
-  // Raison sociale / SIREN / adresse : a renseigner par l'exploitant du site.
-  legalName: '[A COMPLETER : raison sociale exacte]',
-  siret: '[A COMPLETER : numero SIRET]',
-  rcs: '[A COMPLETER : ville + numero RCS]',
+
+  // --- Identification legale (source : registre du commerce) -----------
+  // Depuis 2022, la denomination d'un entrepreneur individuel doit etre
+  // precedee ou suivie de « EI » (art. R.123-237-1 du code de commerce).
+  legalName: 'Bilal ASSOUL — Entrepreneur individuel (EI)',
+  legalForm: 'Entreprise individuelle',
+  siren: '901 133 041',
+  siret: '901 133 041 00011',
+  rcs: '901 133 041 R.C.S. Nanterre',
+  rcsGreffe: 'Nanterre',
+  rcsDate: '7 juillet 2021',
+  rneDate: '6 juillet 2021',
+  ape: '81.29A — Désinfection, désinsectisation, dératisation',
+  publicationDirector: 'Bilal ASSOUL',
+
+  // Le numero de TVA est signale inactif au registre : il n'est donc pas
+  // publie. A renseigner si l'entreprise devient assujettie a la TVA.
+  vat: '[A COMPLETER : numero de TVA intracommunautaire, si assujetti]',
   certibiocide: '[A COMPLETER : numero d agrement Certibiocide]',
   insurance: '[A COMPLETER : assureur + numero de police RC professionnelle]',
+  mediateur: '[A COMPLETER : mediateur de la consommation — nom, adresse, site]',
+
   address: {
-    street: '[A COMPLETER : adresse postale]',
-    postalCode: '[A COMPLETER]',
-    city: '[A COMPLETER]',
+    street: '1 rue Albert Simonin',
+    postalCode: '92400',
+    city: 'Courbevoie',
     region: 'Île-de-France',
     country: 'FR'
+  },
+
+  // --- Hebergement du site ---------------------------------------------
+  host: {
+    name: 'Hostinger International Ltd',
+    address: '61 Lordou Vironos Street, 6023 Larnaca, Chypre',
+    url: 'https://www.hostinger.fr'
   },
   // URL canonique de production. A changer au moment de la mise en ligne.
   origin: 'https://www.chenilles-processionnaires-idf.fr',
@@ -55,10 +78,11 @@ export const site = {
   locale: 'fr_FR',
   themeColor: '#1B3A2B',
   editorial: {
-    // Responsable editorial : a renseigner par l'exploitant.
-    // Tant que ce champ est un placeholder, aucune signature d'auteur
-    // n'est affichee ni injectee en donnees structurees.
-    author: '[A COMPLETER : nom du responsable editorial]',
+    // Signature affichee en tete des articles du blog. Volontairement vide :
+    // les articles ont ete rediges pour le site, les signer d'un nom serait
+    // une attribution inexacte. Renseigner ce champ fait apparaitre
+    // « Par <nom>, <role> » et injecte l'auteur en donnees structurees.
+    author: '[A COMPLETER : signataire des articles, si souhaite]',
     role: 'Responsable technique'
   }
 };

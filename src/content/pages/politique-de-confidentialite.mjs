@@ -1,6 +1,6 @@
 import { standardPage } from '../../lib/layout.mjs';
 import { site } from '../../lib/site.mjs';
-import { note, table } from '../../lib/render.mjs';
+import { note, table, hasValue, esc } from '../../lib/render.mjs';
 
 export default standardPage({
   url: '/politique-de-confidentialite/',
@@ -9,12 +9,24 @@ export default standardPage({
   h1: 'Politique de confidentialité',
   trail: [{ name: 'Accueil', url: '/' }, { name: 'Politique de confidentialité', url: '/politique-de-confidentialite/' }],
   datePublished: '2026-06-06',
-  dateModified: '2026-09-18',
+  dateModified: '2026-09-21',
   priority: '0.2',
   toc: false,
   lead: `Cette page décrit les données que nous collectons, pourquoi, combien de temps nous les conservons
   et comment exercer vos droits.`,
   sections: [
+    { h2: "Responsable du traitement",
+      html: `
+      ${table(['', ''], [
+        ['Responsable', esc(site.legalName)],
+        ['Adresse', `${esc(site.address.street)}, ${esc(site.address.postalCode)} ${esc(site.address.city)}`],
+        ['Téléphone', `<a href="${site.phoneHref}">${site.phoneDisplay}</a>`],
+        ['Adresse e-mail', hasValue(site.email) ? esc(site.email) : '<em>information à compléter</em>'],
+        ['SIRET', esc(site.siret)]
+      ], "Qui traite vos données")}
+      <p>Les mentions légales complètes figurent sur la
+      <a href="/mentions-legales/">page dédiée</a>.</p>` },
+
     { h2: "Données collectées",
       html: `
       <p>Le site ne collecte aucune donnée à votre insu. Les seules informations recueillies sont celles que
@@ -47,9 +59,13 @@ export default standardPage({
       <p>Les données sont destinées exclusivement aux personnes chargées du traitement des demandes et de
       la réalisation des interventions. Elles ne sont ni vendues, ni louées, ni transmises à des tiers à des
       fins commerciales.</p>
-      <p>Des prestataires techniques peuvent y avoir accès dans la stricte mesure nécessaire à leur mission
-      — hébergement du site, acheminement des messages. Ils agissent sur instruction et sont soumis à une
-      obligation de confidentialité.</p>` },
+      <p>Des prestataires techniques peuvent y avoir accès dans la stricte mesure nécessaire à leur
+      mission. Ils agissent sur instruction et sont soumis à une obligation de confidentialité.</p>
+      ${table(['Prestataire', 'Rôle', 'Localisation'], [
+        [esc(site.host.name), 'Hébergement du site', 'Chypre — Union européenne']
+      ], 'Sous-traitants')}
+      <p>L'hébergement étant assuré au sein de l'Union européenne, vos données ne font l'objet
+      d'aucun transfert vers un pays tiers.</p>` },
 
     { h2: "Durée de conservation",
       html: `
@@ -65,11 +81,17 @@ export default standardPage({
       <p>Conformément au RGPD et à la loi Informatique et Libertés, vous disposez d'un droit d'accès, de
       rectification, d'effacement, de limitation et d'opposition, ainsi que du droit à la portabilité de vos
       données.</p>
-      <p>Pour les exercer, contactez-nous au <a href="${site.phoneHref}">${site.phoneDisplay}</a> ou via le
-      <a href="/contact/">formulaire de contact</a>, en indiquant votre demande. Vous pouvez également
-      introduire une réclamation auprès de la CNIL (<span>www.cnil.fr</span>).</p>
-      ${note(`<p>L'adresse électronique dédiée à l'exercice de ces droits sera précisée dans les
-      <a href="/mentions-legales/">mentions légales</a> lors de la mise en ligne définitive.</p>`)}` },
+      <p>Pour les exercer, adressez votre demande :</p>
+      <ul class="plain">
+        <li><strong>Par téléphone</strong> — <a href="${site.phoneHref}">${site.phoneDisplay}</a></li>
+        <li><strong>Par courrier</strong> — ${esc(site.legalName)}, ${esc(site.address.street)},
+            ${esc(site.address.postalCode)} ${esc(site.address.city)}</li>
+        ${hasValue(site.email) ? `<li><strong>Par e-mail</strong> — ${esc(site.email)}</li>` : ''}
+        <li><strong>En ligne</strong> — via le <a href="/contact/">formulaire de contact</a></li>
+      </ul>
+      <p>Une réponse vous est apportée dans un délai d'un mois. Vous pouvez également introduire une
+      réclamation auprès de la Commission nationale de l'informatique et des libertés
+      (<span>www.cnil.fr</span>).</p>` },
 
     { h2: "Cookies et mesure d'audience",
       html: `

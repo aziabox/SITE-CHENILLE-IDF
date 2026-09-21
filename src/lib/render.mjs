@@ -73,16 +73,21 @@ export const safety = (html, title = 'Sécurité') => `
 </aside>`;
 
 /** Tableau comparatif. rows = [[c1, c2, ...], ...] */
-export const table = (headers, rows, caption = '') => `
+export const table = (headers, rows, caption = '') => {
+  // Tableau clé/valeur : des en-tetes vides ne doivent pas produire une
+  // ligne d'en-tete vide a l'ecran ni dans l'arbre d'accessibilite.
+  const sansEntete = headers.every(h => !String(h).trim());
+  return `
 <div class="table-wrap">
   <table>
     ${caption ? `<caption>${esc(caption)}</caption>` : ''}
-    <thead><tr>${headers.map(h => `<th scope="col">${h}</th>`).join('')}</tr></thead>
+    ${sansEntete ? '' : `<thead><tr>${headers.map(h => `<th scope="col">${h}</th>`).join('')}</tr></thead>`}
     <tbody>${rows.map(r => `<tr>${r.map((c, i) =>
       i === 0 ? `<th scope="row">${c}</th>` : `<td>${c}</td>`).join('')}</tr>`).join('')}
     </tbody>
   </table>
 </div>`;
+};
 
 /** Liste d'etapes numerotees. */
 export const steps = (items) => `
@@ -432,6 +437,11 @@ const footerHtml = () => `
         <a href="${site.phoneHref}" data-cta="tel" data-cta-zone="footer">${site.phoneDisplay}</a>
         <span class="footer__hours">${esc(site.openingHours)}</span>
       </p>
+      ${hasValue(site.address.street) && hasValue(site.address.city) ? `
+      <p class="footer__nap">
+        ${hasValue(site.legalName) ? `<span class="footer__nap-nom">${esc(site.legalName)}</span>` : ''}
+        ${esc(site.address.street)}<br>${esc(site.address.postalCode)} ${esc(site.address.city)}
+      </p>` : ''}
     </div>
 
     <div class="footer__col">

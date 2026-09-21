@@ -449,3 +449,6 @@ textarea{min-height:8rem;resize:vertical}
   .carte__nom{font-size:38px}
   .carte__code--grande{font-size:30px}
 }
+
+.footer__nap{margin:.85rem 0 0;font-size:.85rem;line-height:1.5;color:#9AAF9D}
+.footer__nap-nom{display:block;color:#C3D3C6}

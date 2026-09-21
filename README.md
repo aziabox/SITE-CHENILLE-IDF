@@ -82,15 +82,21 @@ structurées correspondantes ne sont pas émises.
 | Où | Quoi |
 |---|---|
 | `src/lib/site.mjs` → `site.origin` | URL canonique de production (actuellement un domaine provisoire) |
-| `src/lib/site.mjs` → `site.legalName`, `siret`, `rcs` | Raison sociale et immatriculation |
-| `src/lib/site.mjs` → `site.address` | Adresse d'établissement. **Tant qu'elle est vide, aucun `LocalBusiness` n'est déclaré** : le site s'en tient à `Organization`, pour ne pas créer de faux établissement |
-| `src/lib/site.mjs` → `site.email` | Adresse de contact |
-| `src/lib/site.mjs` → `site.certibiocide`, `insurance` | Agrément et assurance RC professionnelle |
+| `src/lib/site.mjs` → `site.email` | Adresse de contact. Elle apparaît dans les mentions légales et dans la politique de confidentialité (exercice des droits) |
+| `src/lib/site.mjs` → `site.vat` | Numéro de TVA intracommunautaire, **si l'entreprise est assujettie**. Le registre signale le numéro comme inactif : il n'est donc pas publié |
+| `src/lib/site.mjs` → `site.certibiocide` | Numéro de certification pour l'application de produits biocides |
+| `src/lib/site.mjs` → `site.insurance` | Assureur et numéro de police RC professionnelle |
+| `src/lib/site.mjs` → `site.mediateur` | Médiateur de la consommation — obligatoire pour une activité auprès de particuliers (art. L.616-1 du code de la consommation) |
 | `src/lib/site.mjs` → `site.googleBusinessUrl` | URL de la fiche établissement, **si elle existe réellement** |
-| `src/lib/site.mjs` → `site.editorial.author` | Responsable éditorial. Tant qu'il est vide, aucune signature d'auteur n'est affichée ni injectée en JSON-LD |
+| `src/lib/site.mjs` → `site.editorial.author` | Signataire des articles du blog. Laissé vide volontairement : aucune signature n'est affichée ni injectée en JSON-LD tant qu'il l'est |
 | `src/lib/site.mjs` → `site.formEndpoint` | Point de réception du formulaire. Tant qu'il est vide, le formulaire renvoie explicitement vers le téléphone |
 | `src/lib/site.mjs` → `site.gtmId` | Conteneur GTM. Vide = **aucun script tiers injecté** |
-| `src/content/pages/mentions-legales.mjs` | Hébergeur (nom, adresse, contact) |
+
+Les informations d'identification de l'entreprise (dénomination, SIREN, SIRET,
+RCS, code APE, adresse, directeur de la publication) et celles de l'hébergeur
+sont renseignées. Elles alimentent à la fois les mentions légales, la politique
+de confidentialité, le NAP du pied de page et les données structurées
+`PestControlService`.
 
 Le numéro de téléphone **07 56 82 27 85** est déjà en place partout
 (en-tête, menu mobile, sections, pied de page, page contact), en lien
