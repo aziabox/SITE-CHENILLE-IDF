@@ -4,9 +4,9 @@ import { site, blogCategories } from '../../lib/site.mjs';
 import { posts, postsByCategory } from './posts/_all.mjs';
 import { hasValue } from '../../lib/render.mjs';
 
-const catNav = (active = null) => `
+const catNav = (active = null, heading = true) => `
 <nav class="related" aria-label="Catégories du blog">
-  <h2 class="related__title">Catégories</h2>
+  ${heading ? '<p class="related__title">Autres catégories</p>' : ''}
   <ul class="related__list">
     ${blogCategories.map(c => `<li><a href="/blog/${c.slug}/"${c.slug === active ? ' aria-current="page"' : ''}>
       <span class="related__label">${esc(c.name)}</span>
@@ -121,7 +121,7 @@ const blogIndex = standardPage({
   identifier avant d'agir, comprendre le cycle pour choisir la bonne saison, et savoir ce qui relève de
   l'urgence.`,
   sections: [
-    { h2: 'Par catégorie', toc: false, html: catNav() },
+    { h2: 'Par catégorie', toc: false, html: catNav(null, false) },
     { h2: `Tous les articles`, toc: false,
       html: postList(posts) + note(`<p>Les informations relatives à la santé humaine ou animale publiées sur
       ce blog sont générales et ne remplacent pas l'avis d'un médecin ou d'un vétérinaire.</p>`) }

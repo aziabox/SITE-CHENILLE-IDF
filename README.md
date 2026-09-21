@@ -17,8 +17,11 @@ npm run audit     # audit SEO / contenu / duplication / liens / accessibilité
 npm run check     # build + audit
 ```
 
-Aucune dépendance de production. Node 20+ suffit.
-`playwright-core` n'est utilisé que pour les captures de contrôle en développement.
+**Aucune dépendance, ni de production ni de développement.** Node 20+ suffit :
+le générateur, l'encodeur PNG et l'audit n'utilisent que des modules natifs.
+
+`dist/` et `node_modules/` ne sont pas versionnés : `npm run build` régénère
+l'intégralité du site en moins d'une seconde.
 
 ---
 
